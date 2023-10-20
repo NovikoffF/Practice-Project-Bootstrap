@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/fontello.css" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Доставка суши Харьков Roll Club</title>
+  </head>
+  <body>
+   <div class="header-top">
+     <div class="container">
+       <div class="row">
+         <div class="col-lg-7  left-menu text-uppercase">
+           <nav class="navbar navbar-expand-lg navbar-light">
+             <div class="container-fluid">
+               <div class="collapse navbar-collapse first-navbar" id="navbarNav">
+                 <ul class="navbar-nav">
+                   <li class="nav-item">
+                     <a class="nav-link"  href="reviews.html">Отзывы</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="restaurants.html">Наши Заведения</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Доставка</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Акции</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Самовывоз</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Контакты</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Блог</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Вакансии</a>
+                   </li>
+                 </ul>
+               </div>
+             </div>
+           </nav>
+         </div>
+         <div class="col-lg-5 right-menu text-uppercase">
+          <nav class="navbar navbar-expand-lg navbar-light second-navbar">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown" id="hover-dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Харьков
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Днепр</a></li>
+                      <li><a class="dropdown-item" href="#">Киев</a></li>
+                      <li><a class="dropdown-item" href="#">Одесса</a></li>
+                      <li><a class="dropdown-item" href="#">Львов</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item registr-menu">
+                    <a class="nav-link" href="#">Вход/регистрация</a>
+                  </li>
+                  <li class="nav-item tik-tok">
+                    <a class="nav-link" href="#">
+                      <svg width="14" height="16" viewBox="0 0 14 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.98989 0C10.2539 2.27063 11.5212 3.62436 13.7247 3.76838V6.32223C12.4477 6.44705 11.3292 6.0294 10.0283 5.24212V10.0186C10.0283 16.0864 3.41323 17.9826 0.753766 13.6334C-0.955205 10.8347 0.0912997 5.92379 5.57345 5.72697V8.42004C5.15581 8.48725 4.70936 8.59286 4.30132 8.73207C3.082 9.14492 2.39073 9.91779 2.58275 11.2811C2.95239 13.8926 7.74326 14.6655 7.34482 9.56256V0.00480048H9.98989V0Z">
+                        </path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="nav-item instagram">
+                    <a class="nav-link" href="#">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H12C14.1998 0 16 1.80015 16 3.9999V12.0001C16 14.1993 14.1998 16 12 16H4C1.8002 16 0 14.1993 0 12.0001V3.9999C0 1.80015 1.8002 0 4 0ZM12.0001 14.6667C13.4709 14.6667 14.6667 13.4701 14.6667 12.0002V3.99996C14.6667 2.5296 13.4709 1.33342 12.0001 1.33342H4.0001C2.5299 1.33342 1.3335 2.5296 1.3335 3.99996V12.0002C1.3335 13.4701 2.5299 14.6667 4.0001 14.6667H12.0001ZM13.3379 3.66645C13.3379 4.21872 12.8902 4.66643 12.3379 4.66643C11.7856 4.66643 11.3379 4.21872 11.3379 3.66645C11.3379 3.11418 11.7856 2.66648 12.3379 2.66648C12.8902 2.66648 13.3379 3.11418 13.3379 3.66645ZM8.00391 3.9999C5.7943 3.9999 4.00391 5.79044 4.00391 7.9998C4.00391 10.2083 5.7943 12.0001 8.00391 12.0001C10.2129 12.0001 12.0039 10.2083 12.0039 7.9998C12.0039 5.79044 10.2129 3.9999 8.00391 3.9999ZM8.004 10.6668C6.53139 10.6668 5.3374 9.47285 5.3374 7.99988C5.3374 6.52691 6.53139 5.33334 8.004 5.33334C9.47662 5.33334 10.6706 6.52691 10.6706 7.99988C10.6706 9.47285 9.47662 10.6668 8.004 10.6668Z">
+                        </path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="nav-item youtube">
+                    <a class="nav-link" href="#">
+                      <svg width="20" height="14" viewBox="0 0 20 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8252 0.428126C18.6819 0.658786 19.3575 1.33405 19.5879 2.19067C20.0164 3.75525 19.9999 7.01648 19.9999 7.01648C19.9999 7.01648 19.9999 10.2611 19.5882 11.8258C19.3575 12.6823 18.682 13.3576 17.8252 13.5881C16.2602 14 10 14 10 14C10 14 3.75611 14 2.17469 13.5718C1.31787 13.3411 0.642579 12.6658 0.411866 11.8093C0 10.2611 0 7 0 7C0 7 0 3.75525 0.411866 2.19067C0.642335 1.33417 1.33435 0.64231 2.17456 0.411894C3.73963 0 9.99977 0 9.99977 0C9.99977 0 16.2602 0 17.8252 0.428126ZM13.2126 6.99993L8.00679 4.00232V9.99754L13.2126 6.99993Z">
+                        </path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown" id="hover-dropdown2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Ru
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Uk</a></li>
+                      <li><a class="dropdown-item" href="#">Ru</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            
+            </div>
+          </nav>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="header-middle">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="info-header">
+            <div class="worktime mt-4">
+              <i class="icons icon-clock-arrows"></i>
+              <span>Мы работаем с 10-00 до 21-00</span>
+            </div>
+            <div class="header-phones mt-4">
+              <i class="icons icon-phone"></i>
+              <a  class= "phone text-decoration-none"href="tel:7500">7500 (call back)</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-4">
+          <div class="logo">
+            <svg viewBox="0 0 118 72" xmlns="http://www.w3.org/2000/svg" fill="#333333"><title>Roll Club Харьков</title><path d="M0.680176 0.550781H13.5541C17.7151 0.550781 20.5938 1.65243 22.4221 3.50004C24.0171 5.113 24.8329 7.23602 24.8329 10.0284C24.8329 14.2362 22.6163 17.0286 19.232 18.4847L25.7269 28.0809H17.0153L11.5316 19.7432H8.22547V28.0809H0.680176V0.550781ZM13.2048 13.7656C15.772 13.7656 17.2498 12.5071 17.2498 10.4224C17.2498 8.25863 15.6938 7.15821 13.1657 7.15821H8.22547V13.7656H13.2048Z"></path><path d="M31.6006 14.3165C31.6006 6.41106 37.9014 0 46.3016 0C54.7018 0 60.9256 6.33202 60.9256 14.3165C60.9256 22.222 54.6249 28.633 46.2246 28.633C37.8232 28.6318 31.6006 22.2998 31.6006 14.3165ZM53.2252 14.3165C53.2252 10.3446 50.3857 6.88284 46.2246 6.88284C42.1015 6.88284 39.3401 10.2656 39.3401 14.3165C39.3401 18.2884 42.1796 21.7502 46.3016 21.7502C50.4638 21.7489 53.2252 18.3674 53.2252 14.3165Z"></path><path d="M68.7432 0.550781H76.2885V21.3957H89.4726V28.0822H68.7432V0.550781Z"></path><path d="M96.5903 0.550781H104.136V21.3957H117.32V28.0822H96.5903V0.550781Z"></path><path d="M0 57.6835C0 49.6607 6.10659 43.3669 14.3517 43.3669C19.9136 43.3669 23.3748 45.8049 25.7857 49.1877L20.2629 53.514C18.7069 51.5478 16.8798 50.3288 14.2735 50.3288C10.4618 50.3288 7.77857 53.593 7.77857 57.6835C7.77857 61.8134 10.4618 65.0381 14.2735 65.0381C17.1131 65.0381 18.7851 63.7005 20.418 61.6948L26.0959 65.7853C23.5287 69.3644 20.0675 71.9987 14.039 71.9987C6.26169 72 0 65.9829 0 57.6835Z"></path><path d="M33.4092 43.9191H40.9545V64.764H54.1386V71.4504H33.4092V43.9191Z"></path><path d="M59.5537 59.3755V43.9191H67.215V59.2187C67.215 63.1905 69.1985 65.0789 72.2322 65.0789C75.266 65.0789 77.2494 63.2696 77.2494 59.415V43.9191H84.9107V59.1791C84.9107 68.0677 79.8935 71.9617 72.154 71.9617C64.4146 71.9605 59.5537 67.9886 59.5537 59.3755Z"></path><path d="M93.6528 43.9191H107.615C111.037 43.9191 113.449 44.7848 115.043 46.3965C116.132 47.4982 116.793 48.9531 116.793 50.9192C116.793 54.1056 115.004 55.9928 112.593 57.0549C115.899 58.1565 118 60.0437 118 63.8587C118 68.5778 114.188 71.4492 107.693 71.4492H93.6528V43.9191ZM105.749 54.8923C108.044 54.8923 109.327 54.1056 109.327 52.4149C109.327 50.9205 108.161 50.0547 105.905 50.0547H101.005V54.8923H105.749ZM106.838 65.3136C109.133 65.3136 110.456 64.4095 110.456 62.7175C110.456 61.2231 109.289 60.24 106.761 60.24H101.005V65.3136H106.838Z">
+            </path>
+          </svg>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-4">
+          <div class="order-block">
+            <div class="shopping-card">
+              <div class="shopping-card-wrap">
+                <a href="https://roll-club.kh.ua/cart/" class="cart-total">
+                  <strong>Корзина</strong>	0 шт. - <span class="amount">0,00&nbsp;грн.</span>
+                </a>
+                <button id="sticky-button" class="card-button text-center border border-secondary rounded">
+                  <span class="cart-button-total">Корзина 
+                    <span>0 &nbsp;
+                      <span class="woocommerce-Price-currencySymbol">грн.
+                      </span>
+                    </span>
+                  </span>
+                  <span class="cart-icon position-relative">
+                    <svg class="icon" width="25" height="32" viewBox="0 0 430 547" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(0.000000, 16.000000)" stroke="currentColor" stroke-width="32">
+                        <rect x="16" y="109" width="398" height="406">
+                        </rect>
+                        <path d="M137,181.5 L137,58 C147.934943,20.0058773 174.518277,0.839210629 216.75,0.5 C258.25,0.166666667 284.833333,19.3333333 296.5,58 L296.5,181.5">
+                        </path>
+                      </g>
+                    </g>
+                  </svg>
+                  <span class="position-absolute top-0 start-95 translate-middle badge rounded-pill bg-danger">
+                    0
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+   <div class="header-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mt-4 roll-menu text-uppercase">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">              
+              <div class="collapse navbar-collapse main-menu" id="navbarNav">
+                <ul class="navbar-nav menu">
+                  <li class="nav-item icon-sushi">
+                    <a class="nav-link" href="#">
+                      <img src="/files/icons/menu-icon-sushi.svg" width="40" height="42" alt="sushi">
+                     <p>Суши</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <img src="/files/icons/menu-icon-rolly.svg" width="40" height="42" alt=""><p>Роллы</p></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <img src="/files/icons/menu-icon-nabory.svg" width="40" height="42" alt=""><p>Сеты</p></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <img src="/files/icons/menu-icon-premium.svg" width="40" height="42" alt=""><p>От Шефа</p></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <img src="/files/icons/menu-icon-aktsiya-sale.svg" width="40" height="42" alt=""><p>Скидки</p></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <img src="/files/icons/menu-icon-bowl.svg" width="40" height="42" alt=""><p>Читмил</p></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <img src="/files/icons/menu-icon-pizza.svg" width="40" height="42" alt=""><p>Пицца</p></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <img src="/files/icons/menu-icon-shaurma.svg" width="40" height="42" alt=""><p>Шаурма</p></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <img src="/files/icons/menu-icon-burger.svg" width="40" height="42" alt=""><p>Бургеры</p></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <img src="/files/icons/menu-icon-eda-v-korobjchkah.svg" width="40" height="42" alt=""><p>Лапша</p></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <img src="/files/icons/menu-icon-goryachie-blyuda.svg" width="40" height="42" alt=""><p>Супы</p></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <img src="/files/icons/menu-icon-salaty.svg" width="40" height="42" alt=""><p>Салаты</p></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <img src="/files/icons/menu-icon-deserty.svg" width="40" height="42" alt=""><p>Десерты</p></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <img src="/files/icons/menu-icon-napitki.svg" width="40" height="42" alt=""><p>Напитки</p></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <img src="/files/icons/menu-icon-sousy.svg" width="40" height="42" alt=""><p>Соусы</p></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+   </div>
+   <div class="main-slider">
+   <div class="container">
+    <div class="row">
+      <div class="col">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/files/images/podarok_rus_1920h700.jpg.webp" class="d-block w-100" alt="...">
+            </div>
+           
+            <div class="carousel-item">
+              <img src="/files/images/sushi_burger_podarunok_ru_main_1920h700.jpg.webp" class="d-block w-100" alt="...">
+            </div>
+            
+            <div class="carousel-item">
+              <img src="/files/images/sushi_burger_rus_1920h700.jpg.webp" class="d-block w-100" alt="...">
+            </div>
+           
+            <div class="carousel-item">
+              <img src="/files/images/vid-shefa-ru_1920h700.jpg.webp" class="d-block w-100" alt="...">
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev left" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon rounded-circle" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next right" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon rounded-circle" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+   </div>
+
+  </div>
+    <div class="products-featured">
+      <div class="container">
+        <h2 class="text-center title fs-2">Вкусные новинки</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card card-food" >
+              <img src="/files/images/menu/oll-stars-900h600-900x600.jpg" class="card-img-top" alt="...">
+              <div class="card-overlay">
+                <p class="card-text">Состав бургера: котлета из говядины, помидор, сыр Чеддер, лук Марс, корнишоны, салат Айсберг, сливочное масло, соус пикантный.
+                  Вес: 300 г
+                  Бургер набор: бургер подается с картофелем фри и кетчупом.
+                  Вес: 300/100/30 г
+                  Количество в порции: 1 шт.</p>
+              </div>
+              <div class="card-body body-card-food">
+                <span class="onsale">Новинка</span>
+                <h5 class="card-title">Олл старс</h5>
+                
+                  <a href="#" class="btn btn-primary button-order">Заказать</a>
+              </div>
+          </div>
+          <div class="card card-food" >
+            <img src="/files/images/menu/sertifikat-1000-900h600-900x600.jpg" class="card-img-top" alt="...">
+            <div class="card-overlay">
+              <p class="card-text">Сертификат на 1000 грн</p>
+            </div>
+            <div class="card-body body-card-food">
+              <span class="onsale">Новинка</span>
+              <h5 class="card-title">Сертификат на 1000 грн</h5>
+                <a href="#" class="btn btn-primary button-order">Заказать</a>
+            </div>
+        </div>
+        <div class="card card-food" >
+          <img src="/files/images/menu/sushi-burger-tripl-fish-900h600-900x600.jpg" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-text">
+              Состав: рис, нори, лосось, угорь, креветки, кимчи, крем-сыр, огурец, томат, начос, соус унаги, соус спайс, темпура-кляр, панко-сухари, миндальные хлопья.
+              Вес: 400 г
+              Количество в порции: 1 шт.
+            </p>
+          </div>
+          <div class="card-body body-card-food">
+            <span class="onsale">Новинка</span>
+            <h5 class="card-title">Суши бургер трипл фиш</h5>
+              <a href="#" class="btn btn-primary button-order">Заказать</a>
+          </div>
+      </div>
+      <div class="card card-food" >
+        <img src="/files/images/menu/chizi-rol-dog-vugor-losos-900h600-900x600.jpg" class="card-img-top" alt="...">
+        <div class="card-overlay">
+          <p class="card-text">
+            Состав: рис, нори, лосось, угорь, креветки, крем-сыр, сыр чеддер, соус унаги, соус спайс, темпура-кляр, панко-сухари, миндальные хлопья.
+Вес: 320 г
+Количество в порции: 1 шт.
+          </p>
+        </div>
+        <div class="card-body body-card-food">
+          <span class="onsale">Новинка</span>
+          <h5 class="card-title">Чизи ролл дог угорь-лосось</h5>
+            <a href="#" class="btn btn-primary button-order">Заказать</a>
+        </div>
+    </div>
+    <div class="card card-food" >
+      <img src="/files/images/menu/krevetka-h3-900h600.jpg" class="card-img-top" alt="...">
+      <div class="card-overlay">
+        <p class="card-text">
+          Роллы:  Креветка унаги 8 шт., Ш-ш-шримп 8 шт., Свит чили микс 8 шт..
+Количество в порции: 24 шт.
+Вес: 720 г
+        </p>
+      </div>
+      <div class="card-body body-card-food">
+        <span class="onsale">Новинка</span>
+        <h5 class="card-title">Креветка х3</h5>
+          <a href="#" class="btn btn-primary button-order">Заказать</a>
+      </div>
+  </div>
+  <div class="card card-food" >
+    <img src="/files/images/menu/stefaniya_podveshennaya_shaurma_900x600-2.jpg" class="card-img-top" alt="...">
+    <div class="card-overlay">
+      <p class="card-text">Подвешенная шаурма для ЗСУ.
+        Вы покупаете шаурму – мы ее отправляем воинам, которые защищают наш Харьков и Харьковскую область!</p>
+    </div>
+    <div class="card-body body-card-food">
+      <span class="onsale">Новинка</span>
+      <h5 class="card-title">Стефания — подвешенная <br>шаурма для ЗСУ</h5>
+        <a href="#" class="btn btn-primary button-order">Заказать</a>
+    </div>
+</div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-food" >
+            <img src="/files/images/menu/panko-chitmil-boul-900h600.jpg" class="card-img-top" alt="...">
+            <div class="card-overlay">
+              <p class="card-text">Состав: картофель фри, креветки панко, маринованое яйцо, соус каспер, соус спайс, кинза, кунжут.
+                Количество в порции: 1 шт.
+                Вес: 335 г</p>
+            </div>
+            <div class="card-body body-card-food">
+              <span class="onsale">Новинка</span>
+              <h5 class="card-title">Панко читмил боул</h5>
+                <a href="#" class="btn btn-primary button-order">Заказать</a>
+            </div>
+        </div>
+        <div class="card card-food" >
+          <img src="/files/images/menu/super-pica-kombo-3-900h600.jpg" class="card-img-top" alt="...">
+          <div class="card-overlay">
+            <p class="card-text">
+              Огромный набор из пиццы 4 мяса, 4 сыра, Мясная с крокетами диаметром 30 см и бутылки Пепси 2 л
+            </p>
+          </div>
+          <div class="card-body body-card-food">
+            <span class="onsale">Новинка</span>
+            <h5 class="card-title">Пицца Супер пицца Комбо</h5>
+              <a href="#" class="btn btn-primary button-order">Заказать</a>
+          </div>
+      </div>
+      <div class="card card-food" >
+        <img src="/files/images/menu/sushi-shaurma-900h600-900x600.jpg" class="card-img-top" alt="...">
+        <div class="card-overlay">
+          <p class="card-text">
+            Состав: рис, нори, лосось, угорь, такуан, крем-сыр, огурец, начос, омлет, сырный соус.
+            Вес: 420/80 г
+            Количество в порции: 1 шт.
+          </p>
+        </div>
+        <div class="card-body body-card-food">
+          <span class="onsale">Новинка</span>
+          <h5 class="card-title">Ролл Суши шаурма</h5>
+            <a href="#" class="btn btn-primary button-order">Заказать</a>
+        </div>
+    </div>
+    <div class="card card-food" >
+      <img src="/files/images/menu/z-kurkoju-900h600-900x600.jpg" class="card-img-top" alt="...">
+      <div class="card-overlay">
+        <p class="card-text">Состав: куриное бедро, яйцо маринованное, перец болгарский, авокадо, огурец, беби шпинат, лук фри, кунжут, соус сладкий чили, цитрусово-имбирная заправка.
+          Количество в порции: 1 шт.
+          Вес: 300 г
+        </p>
+      </div>
+      <div class="card-body body-card-food">
+        <span class="onsale">Новинка</span>
+        <h5 class="card-title">Чикен салат</h5>
+          <a href="#" class="btn btn-primary button-order">Заказать</a>
+      </div>
+  </div>
+  <div class="card card-food" >
+    <img src="/files/images/menu/naibilshii-set-900h600-900x600.jpg" class="card-img-top" alt="...">
+    <div class="card-overlay">
+      <p class="card-text">
+        Роллы:  Филадельфия лайт 8 шт., Филадельфия лайт классическая 8 шт., Сырный 8 шт., Филадельфия унаги грин 8 шт., Бруклин 8 шт., Филадельфия унаги лайт 8 шт., Бонита фреш 8 шт., Кани томаго 10 шт., Овощной 10 шт., Патриот 8 шт., Мидия в спайсе 8 шт., Ика 8 шт., Тартар лосось 6 шт., Тартар микс фиш 6 шт..
+Количество в порции: 112 шт.
+Вес: 2965 г
+      </p>
+    </div>
+    <div class="card-body body-card-food">
+      <span class="onsale">Новинка</span>
+      <h5 class="card-title">Суши-сет Самый большой сет</h5>
+        <a href="#" class="btn btn-primary button-order">Заказать</a>
+    </div>
+</div>
+<div class="card card-food" >
+  <img src="/files/images/menu/10.jpg" class="card-img-top" alt="...">
+  <div class="card-overlay">
+    <p class="card-text">
+      Состав: моцарелла, лосось, мидии, кальмары, помидор, лимон, соус песто, орегано , томатный соус.
+Количество в порции: 1 шт.
+Вес: 30 см – 550 г , 40 см – 900 г
+    </p>
+  </div>
+  <div class="card-body body-card-food">
+    <span class="onsale">Новинка</span>
+    <h5 class="card-title">Пицца Дары Моря</h5>
+      <a href="#" class="btn btn-primary button-order">Заказать</a>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parnters">
+    <div class="container">
+      <h2 class="text-center title">Партнеры:</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="clients-slider__item slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 384px;" tabindex="0">
+            <picture><source data-src="https://roll-club.kh.ua/wp-content/uploads/2023/05/pepsi-400x133.png.webp" type="image/webp"><img data-src="https://roll-club.kh.ua/wp-content/uploads/2023/05/pepsi-400x133.png" width="280" height="93" alt="Pepsi" class="lazy webpexpress-processed loaded" src="https://roll-club.kh.ua/wp-content/uploads/2023/05/pepsi-400x133.png" data-was-processed="true"></picture>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="clients-slider__item slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 384px;" tabindex="0">
+            <a href="https://vilenas.com.ua" target="_blank" tabindex="0">                <picture><source data-src="https://roll-club.kh.ua/wp-content/uploads/2023/05/vilenas-400x133.png.webp" type="image/webp"><img data-src="https://roll-club.kh.ua/wp-content/uploads/2023/05/vilenas-400x133.png" width="280" height="93" alt="Vilena's" class="lazy webpexpress-processed loaded" src="https://roll-club.kh.ua/wp-content/uploads/2023/05/vilenas-400x133.png" data-was-processed="true"></picture>
+            </a>			</div>
+        </div>
+        <div class="col-md-4">
+          <div class="clients-slider__item slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 384px;" tabindex="0">
+            <a href="https://watatsumi.ua/uk/" target="_blank" tabindex="0">                <picture><source data-src="https://roll-club.kh.ua/wp-content/uploads/2023/05/watatsumi-400x133.png.webp" type="image/webp"><img data-src="https://roll-club.kh.ua/wp-content/uploads/2023/05/watatsumi-400x133.png" width="280" height="93" alt="Watatsumi" class="lazy webpexpress-processed loaded" src="https://roll-club.kh.ua/wp-content/uploads/2023/05/watatsumi-400x133.png" data-was-processed="true"></picture>
+            </a>			</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="reviews">
+    <div class="container">
+      <h2 class="text-center title">Отзывы</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card c-reviews">
+            <div class="card-body">
+              <h6 class="card-title-r">
+                lenashalnova31 24.09.2023</h6>
+              <a href="#" class="card-link">Антистресс</a>
+              <p class="card-text text-reviews">Очень вкусный сет! Все на высоте! Спасибо</p>
+            </div>
+          </div>
+          <div class="card c-reviews" >
+            <div class="card-body">
+              <h6 class="card-title-r">
+                anton.seo.tekst 08.09.2023</h6>
+              <a href="#" class="card-link">Релакс</a>
+              <p class="card-text text-reviews">Потрясающие вкусные суши - Вы сделали мой вечер</p>
+            </div>
+          </div>
+          <div class="card c-reviews" >
+            <div class="card-body">
+              <h6 class="card-title-r">
+                mvek.032510 25.08.2023</h6>
+              <a href="#" class="card-link">Криспи аво-лосось</a>
+              <p class="card-text text-reviews">Очень вкусный ролл, манго подчеркивает тонкое сочетание продуктов!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card c-reviews" >
+            <div class="card-body">
+              <h6 class="card-title-r">
+                Лоліта 12.09.2023
+              </h6>
+              <a href="#" class="card-link">Суши бургер с креветками</a>
+              <p class="card-text text-reviews">безумно вкусно, пока что лучшая доставка в Киеве из многих мною опробованных</p>
+            </div>
+          </div>
+          <div class="card c-reviews" >
+            <div class="card-body">
+              <h6 class="card-title-r">
+               Юлия 01.09.2023
+              </h6>
+              <a href="#" class="card-link">Викенд</a>
+              <p class="card-text text-reviews">Дякую ! Все дуже смачно!!!!! Будемо рекомендувати Вас нашим знайомим. Висловлюю свою щиру подяку Вашій компанії за смачні страви, доставлені вчасно</p>
+            </div>
+          </div>
+          <div class="card c-reviews" >
+            <div class="card-body">
+              <h6 class="card-title-r">
+               mvek.032510 25.08.2023
+              </h6>
+              <a href="#" class="card-link">Унаги темпура</a>
+              <p class="card-text text-reviews">Безумно вкусные!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center mt-5">
+          <button type="button" class="btn btn-primary btn-lg"> Больше отзывов</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="advantages advantages-top">
+    <div class="container">
+      <div class="header-block text-center position-relative mb-3">
+        <p class="header-block__up position-absolute text-center">Доставка суши в Харькове</p>
+        <p class="header-block__name">Roll Club</p>
+        <span class="header-block__stars position-absolute text-center"><i class="icons icon-star-red"></i><i class="icons icon-star-red"></i><i class="icons icon-star-red"></i><i class="icons icon-star-red"></i><i class="icons icon-star-red"></i></span>
+      </div>
+      <div class="content-block"><strong>Привносим ресторанное качество в еду с доставкой.</strong></div>
+    </div>
+  </div>
+  <div class="advantages advantages-bottom">
+   <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="advantages-items__img delivery">
+          <img src="/files/icons/icon-delivery.svg" alt="">
+        </div>
+        <p class="text-tag">
+          <strong>Быстрая<br> доставка</strong><br>
+          <div class="line1"></div>
+          <span>Кухни во всех районах города и свои курьеры обеспечивают максимальную скорость доставки</span>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <div class="advantages-items__img food">
+          <img src="/files/icons/icon-fresh.svg" alt="">
+        </div>
+        <p class="text-tag">
+          <strong>Свежие<br> продукты</strong><br>
+          <div class="line2"></div>
+          <span>Кухни во всех районах города и свои курьеры обеспечивают максимальную скорость доставки</span>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <div class="advantages-items__img sales">
+          <img src="/files/icons/icon-sales.svg" alt="">
+        </div>
+        <p class="text-tag">
+          <strong>Акции<br> и скидки</strong><br>
+          <div class="line3"></div>
+          <span>Кухни во всех районах города и свои курьеры обеспечивают максимальную скорость доставки</span>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <div class="advantages-items__img chief">
+          <img src="/files/icons/icon-chef.svg" alt="">
+        </div>
+        <p class="text-tag">
+          <strong>Профессиональное<br> доставка</strong><br>
+          <div class="line4"></div>
+          <span>Кухни во всех районах города и свои курьеры обеспечивают максимальную скорость доставки</span>
+        </p>
+      </div>
+    </div>
+   </div>
+  </div>
+  <div class="faq">
+    <div class="container">
+      <h2 class="text-center title">Ответы на вопросы</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Когда я могу сделать заказ суши в Roll Club?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">С 10:00 до 21:00</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Как можно оплатить заказ?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Оплата курьеру наличными при получении заказа или Online оплата с помощью сервиса быстрых платежей при онлайн заказе</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Сколько ждать доставку суши?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Доставляем заказы от 60 до 90 минут</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block-title text-center rounded mt-5">Мы предлагаем широкий ассортимент азиатской и европейской кухни: роллы, супы, пицца и суши - доставка по Харькову всего нашего меню в считанные минуты!
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6" >
+          <div class="lines-text lines-text-1">
+            <h1 class="title h2 title-subs">Заказать суши в Харькове от Roll Club</h1>
+            <p>Мечтаете устроить себе настоящий вкусный праздник или просто хотите расслабиться в кругу друзей и заказать доставку суши, роллов или пиццу домой? Все это стало возможным благодаря первоклассному сервису по <b>доставке суши в Харькове</b> от Roll Club. В нашем разнообразном меню представлено множество самых разных блюд, созданных по лучшим рецептам искусных шеф-поваров.</p>
+            <p>У нас вы можете в любое время дня и ночи заказать бургеры, суши-сеты, роллы и гарниры, лапшу и супы, салаты, десерты, напитки и <a href="/tovar-category/pizza/">пиццу в Харькове</a> и области (список доставки по пригороду есть на странице <a href="/dostavka-i-oplata/">Доставка</a>).</p>
+            <p>Ролл Клаб думает о каждом, у нас есть блюда как для кто любит мясо, так и для вегетарианцев или тех, кто временно от него отказался.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="lines-text__img">
+            <img src="/files/images/dostavka-sushi-kh-rollclub-ot-schefa.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="lines-text__img">
+            <img src="/files/images/dostavka-sushi-kh-rollclub-kruglosutochno.jpg" alt="">
+          </div>
+          
+        </div>
+        <div class="col-md-6">
+          <div class="lines-text lines-text-2">
+            <h2 class="title h2 title-subs">
+              Доставка суши из самых свежих морепродуктов
+            </h2>
+            <p>Все наши блюда можно назвать настоящими кулинарными шедеврами от мастеров, которые знают толк в безупречном качестве. Мы используем в приготовлении исключительно:</p>
+            <ul>
+              <li>свежие овощи</li>
+              <li>первоклассные морепродукты</li>
+              <li>европейские сыры</li>
+              <li>рыбные деликатесы</li>
+              <li>отборный рис</li>
+              <li>первосортную муку</li>
+            </ul>
+            <p>В Roll Club вы получите только самые качественные и свежие ингредиенты и профессиональное оборудование дают нам возможность готовить самые вкусные суши в Харькове для вас 24/7.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ <div class="proptexts ">
+  <div class="container">
+    <h2 class="text-center title">Отличный выбор блюд японской, европейской и американской кухни с доставкой только в Roll Club</h2>
+   <div class="row">
+    <div class="col-md-12">
+        <div class="proptext proptext--right position-relative rounded">
+          <div class="proptext__bg1 position-absolute lazy"></div>
+          <div class="proptext__cont position-relative">
+            <h3 class="title h3 title-subs">Японская кухня в Харькове</h3>
+            <p>Наши сушисты предлагают огромный выбор суши и роллов, которые покоряют харьковчан своим супер вкусом и внешним видом уже более 10 лет. В нашем меню суши полностью соответствуют японским традициям, а премиум роллы – американским. А еще можно попробовать суши-сеты со слабосоленым и копченым лососем, угрем и тунцом, с вкуснейшим морским окунем или икрой летучей рыбы.</p>
+          </div>
+        </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+      <div class="proptext proptext--left position-relative rounded">
+        <div class="proptext__bg2 lazy position-absolute"></div>
+        <div class="proptext__cont position-relative">
+          <h3 class="title h3 title-subs">Меню европейской кухни</h3>
+          <p>Наша доставка предлагает вам великолепные блюда итальянской и разнообразной европейской кухни. Это конечно же пицца, пасты карбонара и с морепродуктами, шаурма, салаты с лососем, супы и многое другое. У нас есть всё для повседневного и праздничного застолья!</p>
+        </div>
+      </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+      <div class="proptext proptext--right position-relative rounded">
+        <div class="proptext__bg3 lazy position-absolute"></div>
+        <div class="proptext__cont position-relative">
+          <h3 class="title h3 title-subs">Американские блюда</h3>
+          <p>Кто откажется от свежего и сочного бургера? Эта американская еда завоевала все континенты и страны. Вкусная котлетка с соусами и хрустящей булкой так и манит своим ароматом. Плох или хорош фаст-фуд? Об этом можно спорить долго. Но люди часто выбирают американские бургеры, потому что это — удобно, вкусно и быстро.</p>
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+ </div>
+<footer class="footer">
+ <div class="container">
+  <div class="row">
+    <div class="col-md-4 page-column">
+      <div class="footer-item footer-item__pages">
+        <div class="h3 title text-uppercase">
+          Страницы
+        </div>
+        <div class="footer-menu-container">
+          <ul id="menu-footer-menu" class="menu"><li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="#">Отзывы</a></li>
+            <li id="menu-item-297933" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-297933"><a href="#">Наши заведения</a></li>
+            <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><a href="#">Доставка</a></li>
+            <li id="menu-item-189923" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-189923"><a href="#">Акции</a></li>
+            <li id="menu-item-110764" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-110764"><a href="#">Блог</a></li>
+            <li id="menu-item-110770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110770"><a href="#">Вакансии</a></li>
+            <li id="menu-item-142041" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-142041"><a href="#">Контакты</a></li>
+            <li id="menu-item-406931" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-406931"><a href="#">Публичная оферта</a></li>
+            <li id="menu-item-694981" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-694981"><a href="#">Политика конфиденциальности</a></li>
+            </ul>
+        </div>
+        <div class="branches-links d-flex">
+          <a href="https://roll-club.dp.ua/" rel="nofollow" class="link-rc"><svg viewBox="0 0 118 72" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M0.680176 0.550781H13.5541C17.7151 0.550781 20.5938 1.65243 22.4221 3.50004C24.0171 5.113 24.8329 7.23602 24.8329 10.0284C24.8329 14.2362 22.6163 17.0286 19.232 18.4847L25.7269 28.0809H17.0153L11.5316 19.7432H8.22547V28.0809H0.680176V0.550781ZM13.2048 13.7656C15.772 13.7656 17.2498 12.5071 17.2498 10.4224C17.2498 8.25863 15.6938 7.15821 13.1657 7.15821H8.22547V13.7656H13.2048Z"></path><path d="M31.6006 14.3165C31.6006 6.41106 37.9014 0 46.3016 0C54.7018 0 60.9256 6.33202 60.9256 14.3165C60.9256 22.222 54.6249 28.633 46.2246 28.633C37.8232 28.6318 31.6006 22.2998 31.6006 14.3165ZM53.2252 14.3165C53.2252 10.3446 50.3857 6.88284 46.2246 6.88284C42.1015 6.88284 39.3401 10.2656 39.3401 14.3165C39.3401 18.2884 42.1796 21.7502 46.3016 21.7502C50.4638 21.7489 53.2252 18.3674 53.2252 14.3165Z"></path><path d="M68.7432 0.550781H76.2885V21.3957H89.4726V28.0822H68.7432V0.550781Z"></path><path d="M96.5903 0.550781H104.136V21.3957H117.32V28.0822H96.5903V0.550781Z"></path><path d="M0 57.6835C0 49.6607 6.10659 43.3669 14.3517 43.3669C19.9136 43.3669 23.3748 45.8049 25.7857 49.1877L20.2629 53.514C18.7069 51.5478 16.8798 50.3288 14.2735 50.3288C10.4618 50.3288 7.77857 53.593 7.77857 57.6835C7.77857 61.8134 10.4618 65.0381 14.2735 65.0381C17.1131 65.0381 18.7851 63.7005 20.418 61.6948L26.0959 65.7853C23.5287 69.3644 20.0675 71.9987 14.039 71.9987C6.26169 72 0 65.9829 0 57.6835Z"></path><path d="M33.4092 43.9191H40.9545V64.764H54.1386V71.4504H33.4092V43.9191Z"></path><path d="M59.5537 59.3755V43.9191H67.215V59.2187C67.215 63.1905 69.1985 65.0789 72.2322 65.0789C75.266 65.0789 77.2494 63.2696 77.2494 59.415V43.9191H84.9107V59.1791C84.9107 68.0677 79.8935 71.9617 72.154 71.9617C64.4146 71.9605 59.5537 67.9886 59.5537 59.3755Z"></path><path d="M93.6528 43.9191H107.615C111.037 43.9191 113.449 44.7848 115.043 46.3965C116.132 47.4982 116.793 48.9531 116.793 50.9192C116.793 54.1056 115.004 55.9928 112.593 57.0549C115.899 58.1565 118 60.0437 118 63.8587C118 68.5778 114.188 71.4492 107.693 71.4492H93.6528V43.9191ZM105.749 54.8923C108.044 54.8923 109.327 54.1056 109.327 52.4149C109.327 50.9205 108.161 50.0547 105.905 50.0547H101.005V54.8923H105.749ZM106.838 65.3136C109.133 65.3136 110.456 64.4095 110.456 62.7175C110.456 61.2231 109.289 60.24 106.761 60.24H101.005V65.3136H106.838Z"></path></svg> <span>Днепр</span></a>
+           <a href="https://roll-club.ua/" rel="nofollow" class="link-rc"><svg viewBox="0 0 118 72" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M0.680176 0.550781H13.5541C17.7151 0.550781 20.5938 1.65243 22.4221 3.50004C24.0171 5.113 24.8329 7.23602 24.8329 10.0284C24.8329 14.2362 22.6163 17.0286 19.232 18.4847L25.7269 28.0809H17.0153L11.5316 19.7432H8.22547V28.0809H0.680176V0.550781ZM13.2048 13.7656C15.772 13.7656 17.2498 12.5071 17.2498 10.4224C17.2498 8.25863 15.6938 7.15821 13.1657 7.15821H8.22547V13.7656H13.2048Z"></path><path d="M31.6006 14.3165C31.6006 6.41106 37.9014 0 46.3016 0C54.7018 0 60.9256 6.33202 60.9256 14.3165C60.9256 22.222 54.6249 28.633 46.2246 28.633C37.8232 28.6318 31.6006 22.2998 31.6006 14.3165ZM53.2252 14.3165C53.2252 10.3446 50.3857 6.88284 46.2246 6.88284C42.1015 6.88284 39.3401 10.2656 39.3401 14.3165C39.3401 18.2884 42.1796 21.7502 46.3016 21.7502C50.4638 21.7489 53.2252 18.3674 53.2252 14.3165Z"></path><path d="M68.7432 0.550781H76.2885V21.3957H89.4726V28.0822H68.7432V0.550781Z"></path><path d="M96.5903 0.550781H104.136V21.3957H117.32V28.0822H96.5903V0.550781Z"></path><path d="M0 57.6835C0 49.6607 6.10659 43.3669 14.3517 43.3669C19.9136 43.3669 23.3748 45.8049 25.7857 49.1877L20.2629 53.514C18.7069 51.5478 16.8798 50.3288 14.2735 50.3288C10.4618 50.3288 7.77857 53.593 7.77857 57.6835C7.77857 61.8134 10.4618 65.0381 14.2735 65.0381C17.1131 65.0381 18.7851 63.7005 20.418 61.6948L26.0959 65.7853C23.5287 69.3644 20.0675 71.9987 14.039 71.9987C6.26169 72 0 65.9829 0 57.6835Z"></path><path d="M33.4092 43.9191H40.9545V64.764H54.1386V71.4504H33.4092V43.9191Z"></path><path d="M59.5537 59.3755V43.9191H67.215V59.2187C67.215 63.1905 69.1985 65.0789 72.2322 65.0789C75.266 65.0789 77.2494 63.2696 77.2494 59.415V43.9191H84.9107V59.1791C84.9107 68.0677 79.8935 71.9617 72.154 71.9617C64.4146 71.9605 59.5537 67.9886 59.5537 59.3755Z"></path><path d="M93.6528 43.9191H107.615C111.037 43.9191 113.449 44.7848 115.043 46.3965C116.132 47.4982 116.793 48.9531 116.793 50.9192C116.793 54.1056 115.004 55.9928 112.593 57.0549C115.899 58.1565 118 60.0437 118 63.8587C118 68.5778 114.188 71.4492 107.693 71.4492H93.6528V43.9191ZM105.749 54.8923C108.044 54.8923 109.327 54.1056 109.327 52.4149C109.327 50.9205 108.161 50.0547 105.905 50.0547H101.005V54.8923H105.749ZM106.838 65.3136C109.133 65.3136 110.456 64.4095 110.456 62.7175C110.456 61.2231 109.289 60.24 106.761 60.24H101.005V65.3136H106.838Z"></path></svg> <span>Киев</span></a>
+          <a href="https://roll-club.od.ua/" rel="nofollow" class="link-rc"><svg viewBox="0 0 118 72" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M0.680176 0.550781H13.5541C17.7151 0.550781 20.5938 1.65243 22.4221 3.50004C24.0171 5.113 24.8329 7.23602 24.8329 10.0284C24.8329 14.2362 22.6163 17.0286 19.232 18.4847L25.7269 28.0809H17.0153L11.5316 19.7432H8.22547V28.0809H0.680176V0.550781ZM13.2048 13.7656C15.772 13.7656 17.2498 12.5071 17.2498 10.4224C17.2498 8.25863 15.6938 7.15821 13.1657 7.15821H8.22547V13.7656H13.2048Z"></path><path d="M31.6006 14.3165C31.6006 6.41106 37.9014 0 46.3016 0C54.7018 0 60.9256 6.33202 60.9256 14.3165C60.9256 22.222 54.6249 28.633 46.2246 28.633C37.8232 28.6318 31.6006 22.2998 31.6006 14.3165ZM53.2252 14.3165C53.2252 10.3446 50.3857 6.88284 46.2246 6.88284C42.1015 6.88284 39.3401 10.2656 39.3401 14.3165C39.3401 18.2884 42.1796 21.7502 46.3016 21.7502C50.4638 21.7489 53.2252 18.3674 53.2252 14.3165Z"></path><path d="M68.7432 0.550781H76.2885V21.3957H89.4726V28.0822H68.7432V0.550781Z"></path><path d="M96.5903 0.550781H104.136V21.3957H117.32V28.0822H96.5903V0.550781Z"></path><path d="M0 57.6835C0 49.6607 6.10659 43.3669 14.3517 43.3669C19.9136 43.3669 23.3748 45.8049 25.7857 49.1877L20.2629 53.514C18.7069 51.5478 16.8798 50.3288 14.2735 50.3288C10.4618 50.3288 7.77857 53.593 7.77857 57.6835C7.77857 61.8134 10.4618 65.0381 14.2735 65.0381C17.1131 65.0381 18.7851 63.7005 20.418 61.6948L26.0959 65.7853C23.5287 69.3644 20.0675 71.9987 14.039 71.9987C6.26169 72 0 65.9829 0 57.6835Z"></path><path d="M33.4092 43.9191H40.9545V64.764H54.1386V71.4504H33.4092V43.9191Z"></path><path d="M59.5537 59.3755V43.9191H67.215V59.2187C67.215 63.1905 69.1985 65.0789 72.2322 65.0789C75.266 65.0789 77.2494 63.2696 77.2494 59.415V43.9191H84.9107V59.1791C84.9107 68.0677 79.8935 71.9617 72.154 71.9617C64.4146 71.9605 59.5537 67.9886 59.5537 59.3755Z"></path><path d="M93.6528 43.9191H107.615C111.037 43.9191 113.449 44.7848 115.043 46.3965C116.132 47.4982 116.793 48.9531 116.793 50.9192C116.793 54.1056 115.004 55.9928 112.593 57.0549C115.899 58.1565 118 60.0437 118 63.8587C118 68.5778 114.188 71.4492 107.693 71.4492H93.6528V43.9191ZM105.749 54.8923C108.044 54.8923 109.327 54.1056 109.327 52.4149C109.327 50.9205 108.161 50.0547 105.905 50.0547H101.005V54.8923H105.749ZM106.838 65.3136C109.133 65.3136 110.456 64.4095 110.456 62.7175C110.456 61.2231 109.289 60.24 106.761 60.24H101.005V65.3136H106.838Z"></path></svg> <span>Одесса</span></a>
+          <a href="https://roll-club.lviv.ua/" rel="nofollow" class="link-rc"><svg viewBox="0 0 118 72" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M0.680176 0.550781H13.5541C17.7151 0.550781 20.5938 1.65243 22.4221 3.50004C24.0171 5.113 24.8329 7.23602 24.8329 10.0284C24.8329 14.2362 22.6163 17.0286 19.232 18.4847L25.7269 28.0809H17.0153L11.5316 19.7432H8.22547V28.0809H0.680176V0.550781ZM13.2048 13.7656C15.772 13.7656 17.2498 12.5071 17.2498 10.4224C17.2498 8.25863 15.6938 7.15821 13.1657 7.15821H8.22547V13.7656H13.2048Z"></path><path d="M31.6006 14.3165C31.6006 6.41106 37.9014 0 46.3016 0C54.7018 0 60.9256 6.33202 60.9256 14.3165C60.9256 22.222 54.6249 28.633 46.2246 28.633C37.8232 28.6318 31.6006 22.2998 31.6006 14.3165ZM53.2252 14.3165C53.2252 10.3446 50.3857 6.88284 46.2246 6.88284C42.1015 6.88284 39.3401 10.2656 39.3401 14.3165C39.3401 18.2884 42.1796 21.7502 46.3016 21.7502C50.4638 21.7489 53.2252 18.3674 53.2252 14.3165Z"></path><path d="M68.7432 0.550781H76.2885V21.3957H89.4726V28.0822H68.7432V0.550781Z"></path><path d="M96.5903 0.550781H104.136V21.3957H117.32V28.0822H96.5903V0.550781Z"></path><path d="M0 57.6835C0 49.6607 6.10659 43.3669 14.3517 43.3669C19.9136 43.3669 23.3748 45.8049 25.7857 49.1877L20.2629 53.514C18.7069 51.5478 16.8798 50.3288 14.2735 50.3288C10.4618 50.3288 7.77857 53.593 7.77857 57.6835C7.77857 61.8134 10.4618 65.0381 14.2735 65.0381C17.1131 65.0381 18.7851 63.7005 20.418 61.6948L26.0959 65.7853C23.5287 69.3644 20.0675 71.9987 14.039 71.9987C6.26169 72 0 65.9829 0 57.6835Z"></path><path d="M33.4092 43.9191H40.9545V64.764H54.1386V71.4504H33.4092V43.9191Z"></path><path d="M59.5537 59.3755V43.9191H67.215V59.2187C67.215 63.1905 69.1985 65.0789 72.2322 65.0789C75.266 65.0789 77.2494 63.2696 77.2494 59.415V43.9191H84.9107V59.1791C84.9107 68.0677 79.8935 71.9617 72.154 71.9617C64.4146 71.9605 59.5537 67.9886 59.5537 59.3755Z"></path><path d="M93.6528 43.9191H107.615C111.037 43.9191 113.449 44.7848 115.043 46.3965C116.132 47.4982 116.793 48.9531 116.793 50.9192C116.793 54.1056 115.004 55.9928 112.593 57.0549C115.899 58.1565 118 60.0437 118 63.8587C118 68.5778 114.188 71.4492 107.693 71.4492H93.6528V43.9191ZM105.749 54.8923C108.044 54.8923 109.327 54.1056 109.327 52.4149C109.327 50.9205 108.161 50.0547 105.905 50.0547H101.005V54.8923H105.749ZM106.838 65.3136C109.133 65.3136 110.456 64.4095 110.456 62.7175C110.456 61.2231 109.289 60.24 106.761 60.24H101.005V65.3136H106.838Z"></path></svg> <span>Львов</span></a>
+        <a href="https://watatsumi.ua/" class="link-watatsumi"><svg width="62" height="32" viewBox="0 0 62 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.639 26.6431C10.639 26.6726 10.6366 26.7035 10.6313 26.7354C10.6261 26.7678 10.619 26.7964 10.609 26.8208C10.3782 27.5912 10.1442 28.3681 9.90579 29.1507C9.66791 29.9338 9.43097 30.7131 9.19546 31.4887C9.1555 31.6167 9.08794 31.717 8.99278 31.7888C8.89716 31.8601 8.7844 31.8957 8.65404 31.8957H8.43613C8.30101 31.8957 8.18302 31.854 8.08311 31.77C7.98272 31.6861 7.91754 31.5923 7.88757 31.4887C7.8024 31.2069 7.72485 30.949 7.65444 30.7141C7.58403 30.4796 7.51409 30.2489 7.44415 30.0215C7.37373 29.7941 7.3038 29.562 7.23338 29.3252C7.16344 29.0879 7.08542 28.8239 7.00025 28.5323L6.20334 31.4812V31.4737C6.16337 31.6022 6.09105 31.7044 5.98543 31.7813C5.88029 31.8577 5.76753 31.8957 5.64716 31.8957H5.39167C5.26131 31.8957 5.1476 31.8601 5.04959 31.7888C4.95206 31.717 4.88307 31.6167 4.84311 31.4887L3.42959 26.8133C3.41484 26.764 3.40723 26.712 3.40723 26.6576C3.40723 26.5835 3.42198 26.5122 3.45195 26.4428C3.4824 26.3739 3.52331 26.3134 3.57613 26.2614C3.62894 26.2098 3.69031 26.1676 3.76025 26.1357C3.83066 26.1033 3.90346 26.0874 3.97863 26.0874C4.07854 26.0874 4.16513 26.1085 4.23792 26.1502C4.31024 26.1924 4.36686 26.2379 4.40682 26.2872C4.45678 26.3467 4.49722 26.4133 4.52719 26.4874L5.50443 29.6881C5.65001 29.1596 5.79655 28.626 5.94404 28.0877C6.09201 27.5494 6.23854 27.0186 6.38413 26.4949C6.41886 26.3762 6.4869 26.2787 6.58681 26.2023C6.6872 26.1259 6.80233 26.0874 6.93269 26.0874H7.08304C7.20817 26.0874 7.32378 26.1259 7.42892 26.2023C7.53407 26.2787 7.60448 26.3762 7.63969 26.4949L8.54889 29.7176L9.51899 26.4874C9.54373 26.4133 9.58131 26.3467 9.63175 26.2872C9.67171 26.2379 9.7269 26.1924 9.79684 26.1502C9.86725 26.1085 9.9548 26.0874 10.0599 26.0874C10.2103 26.0874 10.3445 26.1418 10.4624 26.2501C10.58 26.3589 10.639 26.4897 10.639 26.6431Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M16.6499 31.7882C16.5429 31.8843 16.4196 31.9326 16.2802 31.9326H16.2132C16.0785 31.9326 15.9562 31.8843 15.8468 31.7882C15.7374 31.692 15.6827 31.565 15.6827 31.4065V29.6804H12.9313V31.4065C12.9313 31.565 12.8766 31.692 12.7671 31.7882C12.6577 31.8843 12.5354 31.9326 12.4013 31.9326H12.3342C12.1943 31.9326 12.0716 31.8843 11.9645 31.7882C11.857 31.692 11.8037 31.565 11.8037 31.4065V28.2728C11.8037 28.0899 11.8151 27.9047 11.8375 27.7167C11.8603 27.5291 11.9051 27.35 11.9731 27.1798C12.0406 27.0091 12.132 26.8487 12.2471 26.6982C12.3627 26.5477 12.5131 26.4178 12.6982 26.309C12.8837 26.2007 13.1083 26.114 13.3714 26.0497C13.6345 25.986 13.9461 25.9536 14.3072 25.9536C14.6679 25.9536 14.98 25.986 15.2431 26.0497C15.5062 26.114 15.7303 26.2007 15.9158 26.309C16.1014 26.4178 16.2517 26.5477 16.3668 26.6982C16.482 26.8487 16.5738 27.0091 16.6414 27.1798C16.7089 27.35 16.7541 27.5291 16.7765 27.7167C16.7993 27.9047 16.8103 28.0899 16.8103 28.2728V31.4065C16.8103 31.565 16.757 31.692 16.6499 31.7882ZM15.683 28.2727C15.683 28.0996 15.6616 27.9388 15.6188 27.7906C15.576 27.6429 15.5018 27.5154 15.3961 27.4094C15.29 27.303 15.1487 27.2204 14.9727 27.1609C14.7962 27.1018 14.5745 27.0723 14.3076 27.0723C14.0402 27.0723 13.8185 27.1018 13.6424 27.1609C13.4659 27.2204 13.3246 27.303 13.219 27.4094C13.1129 27.5154 13.0387 27.6429 12.9959 27.7906C12.9531 27.9388 12.9316 28.0996 12.9316 28.2727V28.5615H15.683V28.2727Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M22.9445 26.6538C22.9445 26.8057 22.887 26.9361 22.7718 27.0439C22.6562 27.1518 22.5235 27.2057 22.3731 27.2057H21.0277V31.4061C21.0277 31.5642 20.9739 31.6917 20.8659 31.7878C20.7579 31.8844 20.6342 31.9327 20.4938 31.9327H20.4187C20.2836 31.9327 20.1603 31.8844 20.0504 31.7878C19.94 31.6917 19.8849 31.5642 19.8849 31.4061V27.2057H18.547C18.3966 27.2057 18.2634 27.1518 18.1483 27.0439C18.0332 26.9361 17.9756 26.8057 17.9756 26.6538C17.9756 26.5802 17.9903 26.5094 18.0208 26.4405C18.0508 26.3715 18.0921 26.3115 18.1445 26.2599C18.1973 26.2088 18.2587 26.1671 18.3286 26.1352C18.399 26.1029 18.4718 26.0869 18.547 26.0869H22.3731C22.4483 26.0869 22.5197 26.1029 22.5877 26.1352C22.6553 26.1671 22.7152 26.2088 22.768 26.2599C22.8204 26.3115 22.8632 26.3715 22.8955 26.4405C22.9284 26.5094 22.9445 26.5802 22.9445 26.6538Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M28.6553 31.7882C28.5482 31.8843 28.425 31.9326 28.2856 31.9326H28.2185C28.0839 31.9326 27.9616 31.8843 27.8527 31.7882C27.7428 31.692 27.688 31.565 27.688 31.4065V29.6804H24.9367V31.4065C24.9367 31.565 24.8819 31.692 24.7725 31.7882C24.6631 31.8843 24.5408 31.9326 24.4067 31.9326H24.3396C24.1997 31.9326 24.0769 31.8843 23.9699 31.7882C23.8624 31.692 23.8091 31.565 23.8091 31.4065V28.2728C23.8091 28.0899 23.8205 27.9047 23.8429 27.7167C23.8657 27.5291 23.9104 27.35 23.9785 27.1798C24.046 27.0091 24.1374 26.8487 24.2525 26.6982C24.3681 26.5477 24.5185 26.4178 24.7035 26.309C24.8891 26.2007 25.1136 26.114 25.3767 26.0497C25.6399 25.986 25.9515 25.9536 26.3126 25.9536C26.6732 25.9536 26.9853 25.986 27.2484 26.0497C27.5115 26.114 27.7356 26.2007 27.9212 26.309C28.1067 26.4178 28.2571 26.5477 28.3722 26.6982C28.4873 26.8487 28.5792 27.0091 28.6467 27.1798C28.7143 27.35 28.7595 27.5291 28.7818 27.7167C28.8047 27.9047 28.8156 28.0899 28.8156 28.2728V31.4065C28.8156 31.565 28.7623 31.692 28.6553 31.7882ZM27.6879 28.2727C27.6879 28.0996 27.6665 27.9388 27.6237 27.7906C27.5809 27.6429 27.5066 27.5154 27.401 27.4094C27.2949 27.303 27.1536 27.2204 26.9776 27.1609C26.8011 27.1018 26.5794 27.0723 26.3125 27.0723C26.0451 27.0723 25.8234 27.1018 25.6473 27.1609C25.4708 27.2204 25.3295 27.303 25.2239 27.4094C25.1178 27.5154 25.0436 27.6429 25.0008 27.7906C24.9579 27.9388 24.9365 28.0996 24.9365 28.2727V28.5615H27.6879V28.2727Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M34.9499 26.6538C34.9499 26.8057 34.8923 26.9361 34.7772 27.0439C34.6616 27.1518 34.5288 27.2057 34.3785 27.2057H33.033V31.4061C33.033 31.5642 32.9793 31.6917 32.8713 31.7878C32.7633 31.8844 32.6396 31.9327 32.4992 31.9327H32.424C32.2889 31.9327 32.1657 31.8844 32.0558 31.7878C31.9454 31.6917 31.8902 31.5642 31.8902 31.4061V27.2057H30.5523C30.4015 27.2057 30.2688 27.1518 30.1536 27.0439C30.0385 26.9361 29.9805 26.8057 29.9805 26.6538C29.9805 26.5802 29.9957 26.5094 30.0261 26.4405C30.0561 26.3715 30.0975 26.3115 30.1498 26.2599C30.2027 26.2088 30.264 26.1671 30.334 26.1352C30.4044 26.1029 30.4772 26.0869 30.5523 26.0869H34.3785C34.4537 26.0869 34.525 26.1029 34.5931 26.1352C34.6606 26.1671 34.7206 26.2088 34.7734 26.2599C34.8257 26.3115 34.8685 26.3715 34.9009 26.4405C34.9337 26.5094 34.9499 26.5802 34.9499 26.6538Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M41.2044 30.1438C41.2044 30.4542 41.1293 30.7257 40.9789 30.9574C40.8286 31.189 40.6269 31.3822 40.3737 31.5374C40.1206 31.6931 39.8276 31.8089 39.494 31.8853C39.161 31.9617 38.8113 31.9997 38.4454 31.9997C38.1048 31.9997 37.7979 31.9678 37.5248 31.9036C37.2513 31.8394 37.0081 31.7601 36.7955 31.6663C36.5823 31.5726 36.402 31.4727 36.254 31.3662C36.1066 31.2603 35.9871 31.1651 35.8972 31.0811C35.7921 30.9775 35.7393 30.8467 35.7393 30.6882C35.7393 30.555 35.7683 30.4523 35.8258 30.3811C35.8834 30.3093 35.9472 30.2563 36.0176 30.2216C36.1027 30.1823 36.1984 30.1574 36.3035 30.1476C36.3739 30.1476 36.4444 30.1588 36.5148 30.1809C36.5847 30.2034 36.6404 30.239 36.6803 30.2882C36.7655 30.3478 36.8635 30.412 36.9739 30.4809C37.0843 30.5503 37.2122 30.6141 37.3578 30.6737C37.5039 30.7327 37.6718 30.7825 37.8626 30.8218C38.0534 30.8612 38.2694 30.8809 38.5102 30.8809C38.6762 30.8809 38.8503 30.8673 39.034 30.8401C39.2171 30.8129 39.3851 30.7689 39.5383 30.707C39.6915 30.6451 39.8195 30.5672 39.9222 30.4734C40.0255 30.3797 40.0769 30.2662 40.0769 30.1326C40.0769 29.9548 40.0255 29.8179 39.9222 29.7213C39.8195 29.6252 39.6915 29.5549 39.5383 29.5103C39.3851 29.4658 39.2181 29.44 39.0373 29.4325C38.8565 29.425 38.6886 29.4212 38.533 29.4212H37.7199C37.5139 29.4212 37.3041 29.3917 37.0909 29.3326C36.8773 29.2735 36.6841 29.1821 36.511 29.0583C36.3378 28.935 36.1955 28.7756 36.0851 28.5805C35.9748 28.3854 35.9196 28.1496 35.9196 27.8729C35.9196 27.5569 35.9981 27.2802 36.1546 27.0434C36.3116 26.8062 36.5119 26.6097 36.756 26.454C37.0005 26.2983 37.2693 26.1825 37.5619 26.1061C37.8555 26.0297 38.1376 25.9912 38.4079 25.9912C38.7185 25.9912 39.0116 26.0184 39.2876 26.0728C39.563 26.1272 39.8047 26.2013 40.0131 26.2946C40.221 26.3888 40.3852 26.5 40.5055 26.6284C40.6254 26.7569 40.6859 26.8948 40.6859 27.0434C40.6859 27.1175 40.6706 27.1888 40.6407 27.2582C40.6107 27.3271 40.5693 27.3867 40.5165 27.4359C40.4641 27.4851 40.4037 27.5245 40.3362 27.5545C40.2686 27.5841 40.1972 27.5986 40.1221 27.5986C40.0065 27.5986 39.8989 27.5644 39.7985 27.495C39.6886 27.4312 39.5883 27.3754 39.4979 27.3285C39.4079 27.2816 39.3128 27.2422 39.2124 27.2099C39.112 27.1775 38.9992 27.1532 38.8741 27.1358C38.7485 27.1185 38.5982 27.11 38.4231 27.11C38.2727 27.11 38.1157 27.126 37.953 27.1583C37.7903 27.1907 37.6423 27.238 37.5096 27.2999C37.3769 27.3623 37.2665 27.4415 37.1789 27.5386C37.0909 27.6357 37.0472 27.7487 37.0472 27.8776C37.0472 28.1711 37.3007 28.3174 37.8079 28.3174H38.5311C38.8774 28.3174 39.211 28.3432 39.5326 28.3953C39.8537 28.4469 40.1387 28.542 40.3871 28.6799C40.6359 28.8178 40.8343 29.0039 40.9823 29.2379C41.1302 29.4723 41.2044 29.7743 41.2044 30.1438Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M47.5794 30.5031C47.5142 30.7797 47.3876 31.0292 47.1997 31.2514C47.0118 31.4737 46.7496 31.6542 46.4142 31.7921C46.0783 31.9304 45.6401 31.9998 45.0987 31.9998C44.5573 31.9998 44.1186 31.9304 43.7832 31.7921C43.4473 31.6542 43.1856 31.4737 42.9972 31.2514C42.8093 31.0292 42.6827 30.7797 42.6176 30.5031C42.5528 30.2264 42.52 29.9497 42.52 29.6731V26.6135C42.52 26.5441 42.5352 26.4775 42.5652 26.4133C42.5952 26.349 42.6352 26.2937 42.6856 26.2464C42.7355 26.1995 42.7917 26.1615 42.8545 26.1319C42.9173 26.1019 42.9834 26.0874 43.0538 26.0874H43.129C43.1942 26.0874 43.2594 26.1019 43.3245 26.1319C43.3897 26.1615 43.4473 26.1995 43.4973 26.2464C43.5472 26.2937 43.5877 26.349 43.6176 26.4133C43.6476 26.4775 43.6628 26.5441 43.6628 26.6135V29.6731C43.6628 29.8461 43.6842 30.0065 43.7266 30.1547C43.7694 30.3028 43.8455 30.4313 43.9559 30.5401C44.0663 30.6489 44.2128 30.7328 44.3955 30.7919C44.5787 30.8514 44.8128 30.881 45.0987 30.881C45.3842 30.881 45.6182 30.8514 45.8014 30.7919C45.9841 30.7328 46.1311 30.6489 46.2415 30.5401C46.3514 30.4313 46.428 30.3028 46.4704 30.1547C46.5132 30.0065 46.5346 29.8461 46.5346 29.6731V26.6135C46.5346 26.5441 46.5493 26.4775 46.5798 26.4133C46.6098 26.349 46.6497 26.2937 46.6997 26.2464C46.7496 26.1995 46.8062 26.1615 46.869 26.1319C46.9318 26.1019 46.998 26.0874 47.0679 26.0874H47.1431C47.2083 26.0874 47.2739 26.1019 47.3386 26.1319C47.4038 26.1615 47.4614 26.1995 47.5118 26.2464C47.5618 26.2937 47.6017 26.349 47.6322 26.4133C47.6622 26.4775 47.6769 26.5441 47.6769 26.6135V29.6731C47.6769 29.9497 47.6446 30.2264 47.5794 30.5031Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M55.067 31.3767C55.067 31.5249 55.0099 31.6543 54.8967 31.7659C54.7834 31.877 54.6507 31.9324 54.4994 31.9324C54.3381 31.9324 54.2016 31.8794 54.0907 31.7734C53.9798 31.667 53.9242 31.5347 53.9242 31.3767V28.5985C53.7191 28.9539 53.5193 29.3046 53.3242 29.6507C53.1292 29.9963 52.9341 30.347 52.739 30.7024C52.6891 30.7868 52.6191 30.8544 52.5292 30.9064C52.4393 30.958 52.3418 30.9842 52.2366 30.9842C52.1315 30.9842 52.0354 30.958 51.9478 30.9064C51.8603 30.8544 51.7894 30.784 51.7342 30.6949L50.5491 28.591V31.3767C50.5491 31.5249 50.492 31.6543 50.3787 31.7659C50.265 31.877 50.1304 31.9324 49.9738 31.9324C49.8126 31.9324 49.6774 31.8794 49.569 31.7734C49.4605 31.667 49.4062 31.5347 49.4062 31.3767V26.6717C49.4062 26.5137 49.4629 26.3796 49.5756 26.268C49.6884 26.1569 49.8202 26.1016 49.971 26.1016H50.1289C50.2293 26.1016 50.3259 26.1288 50.4187 26.1832C50.5115 26.2375 50.5833 26.3088 50.6333 26.3979C50.8992 26.8673 51.1652 27.3437 51.4311 27.8281C51.6971 28.312 51.9654 28.7982 52.2366 29.2873L53.84 26.3979C53.8904 26.3088 53.9603 26.2375 54.0507 26.1832C54.1411 26.1288 54.2363 26.1016 54.3367 26.1016H54.4951C54.5703 26.1016 54.6416 26.1175 54.7097 26.1499C54.7772 26.1817 54.8372 26.2239 54.89 26.2755C54.9428 26.3276 54.9851 26.3881 55.018 26.4575C55.0508 26.5264 55.067 26.5981 55.067 26.6717V31.3767Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M58.1565 31.4066C58.1565 31.5501 58.1041 31.6734 57.9985 31.777C57.8934 31.8807 57.7682 31.9327 57.6227 31.9327H57.5475C57.4071 31.9327 57.283 31.8807 57.1754 31.777C57.0674 31.6734 57.0137 31.5501 57.0137 31.4066V26.613C57.0137 26.5389 57.0289 26.4709 57.0589 26.4095C57.0893 26.3476 57.1279 26.2918 57.1754 26.2426C57.223 26.1934 57.2796 26.1549 57.3448 26.1277C57.4095 26.1005 57.4775 26.0869 57.5475 26.0869H57.6227C57.7682 26.0869 57.8934 26.139 57.9985 26.2426C58.1041 26.3462 58.1565 26.4695 58.1565 26.613V31.4066Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M62 29.118C62 29.6943 61.5256 30.1618 60.9409 30.1618C60.3557 30.1618 59.8818 29.6943 59.8818 29.118C59.8818 28.5417 60.3557 28.0742 60.9409 28.0742C61.5256 28.0742 62 28.5417 62 29.118Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M2.11814 29.118C2.11814 29.6943 1.64379 30.1618 1.05907 30.1618C0.473869 30.1618 0 29.6943 0 29.118C0 28.5417 0.473869 28.0742 1.05907 28.0742C1.64379 28.0742 2.11814 28.5417 2.11814 29.118Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M44.2728 9.06089C44.1148 1.53736 41.7897 0.258659 41.0813 0.0462468C40.8229 -0.0315909 40.5446 -0.0104903 40.3015 0.104391L36.1066 2.08785C36.0362 2.1052 35.9663 2.12958 35.8978 2.16193L23.8046 7.90411L19.9418 6.06976C19.4061 5.81562 18.7619 6.03741 18.5035 6.56586C18.2452 7.09384 18.4702 7.72874 19.0064 7.98335L21.322 9.08246L19.005 10.183C18.4688 10.4371 18.2438 11.072 18.5021 11.6C18.6877 11.9798 19.0726 12.2011 19.4736 12.2011C19.6302 12.2011 19.7896 12.1674 19.9404 12.0961L23.8041 10.2613L40.2301 18.0605C40.3767 18.1299 40.5365 18.1656 40.6973 18.1656C40.7887 18.1656 40.88 18.1538 40.9695 18.1309C41.5499 17.9818 44.436 16.8428 44.2728 9.06089ZM40.6279 15.8921L36.8398 14.0934C36.8379 14.0925 36.8365 14.0915 36.8346 14.0906L26.2915 9.08461L40.657 2.29163C41.0804 2.83039 42.0229 4.54282 42.1185 9.10477C42.217 13.7858 41.147 15.3913 40.6279 15.8921Z"></path>a</svg> <span>Киев</span></a>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="footer-item footer-item__logo text-center">
+        <div class="logo">
+          <div><svg viewBox="0 0 118 72" xmlns="http://www.w3.org/2000/svg" fill="#fff"><title>Roll Club Харьков</title><path d="M0.680176 0.550781H13.5541C17.7151 0.550781 20.5938 1.65243 22.4221 3.50004C24.0171 5.113 24.8329 7.23602 24.8329 10.0284C24.8329 14.2362 22.6163 17.0286 19.232 18.4847L25.7269 28.0809H17.0153L11.5316 19.7432H8.22547V28.0809H0.680176V0.550781ZM13.2048 13.7656C15.772 13.7656 17.2498 12.5071 17.2498 10.4224C17.2498 8.25863 15.6938 7.15821 13.1657 7.15821H8.22547V13.7656H13.2048Z"></path><path d="M31.6006 14.3165C31.6006 6.41106 37.9014 0 46.3016 0C54.7018 0 60.9256 6.33202 60.9256 14.3165C60.9256 22.222 54.6249 28.633 46.2246 28.633C37.8232 28.6318 31.6006 22.2998 31.6006 14.3165ZM53.2252 14.3165C53.2252 10.3446 50.3857 6.88284 46.2246 6.88284C42.1015 6.88284 39.3401 10.2656 39.3401 14.3165C39.3401 18.2884 42.1796 21.7502 46.3016 21.7502C50.4638 21.7489 53.2252 18.3674 53.2252 14.3165Z"></path><path d="M68.7432 0.550781H76.2885V21.3957H89.4726V28.0822H68.7432V0.550781Z"></path><path d="M96.5903 0.550781H104.136V21.3957H117.32V28.0822H96.5903V0.550781Z"></path><path d="M0 57.6835C0 49.6607 6.10659 43.3669 14.3517 43.3669C19.9136 43.3669 23.3748 45.8049 25.7857 49.1877L20.2629 53.514C18.7069 51.5478 16.8798 50.3288 14.2735 50.3288C10.4618 50.3288 7.77857 53.593 7.77857 57.6835C7.77857 61.8134 10.4618 65.0381 14.2735 65.0381C17.1131 65.0381 18.7851 63.7005 20.418 61.6948L26.0959 65.7853C23.5287 69.3644 20.0675 71.9987 14.039 71.9987C6.26169 72 0 65.9829 0 57.6835Z"></path><path d="M33.4092 43.9191H40.9545V64.764H54.1386V71.4504H33.4092V43.9191Z"></path><path d="M59.5537 59.3755V43.9191H67.215V59.2187C67.215 63.1905 69.1985 65.0789 72.2322 65.0789C75.266 65.0789 77.2494 63.2696 77.2494 59.415V43.9191H84.9107V59.1791C84.9107 68.0677 79.8935 71.9617 72.154 71.9617C64.4146 71.9605 59.5537 67.9886 59.5537 59.3755Z"></path><path d="M93.6528 43.9191H107.615C111.037 43.9191 113.449 44.7848 115.043 46.3965C116.132 47.4982 116.793 48.9531 116.793 50.9192C116.793 54.1056 115.004 55.9928 112.593 57.0549C115.899 58.1565 118 60.0437 118 63.8587C118 68.5778 114.188 71.4492 107.693 71.4492H93.6528V43.9191ZM105.749 54.8923C108.044 54.8923 109.327 54.1056 109.327 52.4149C109.327 50.9205 108.161 50.0547 105.905 50.0547H101.005V54.8923H105.749ZM106.838 65.3136C109.133 65.3136 110.456 64.4095 110.456 62.7175C110.456 61.2231 109.289 60.24 106.761 60.24H101.005V65.3136H106.838Z"></path></svg>
+         </div>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.tiktok.com/@rollclub" aria-label="Tiktok" class="tt-icon" target="_blank">
+            <svg width="14" height="16" viewBox="0 0 14 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.98989 0C10.2539 2.27063 11.5212 3.62436 13.7247 3.76838V6.32223C12.4477 6.44705 11.3292 6.0294 10.0283 5.24212V10.0186C10.0283 16.0864 3.41323 17.9826 0.753766 13.6334C-0.955205 10.8347 0.0912997 5.92379 5.57345 5.72697V8.42004C5.15581 8.48725 4.70936 8.59286 4.30132 8.73207C3.082 9.14492 2.39073 9.91779 2.58275 11.2811C2.95239 13.8926 7.74326 14.6655 7.34482 9.56256V0.00480048H9.98989V0Z"></path></svg>
+        </a>
+        <a href="https://www.instagram.com/roll_club/" aria-label="Instagram" class="ins-icon" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H12C14.1998 0 16 1.80015 16 3.9999V12.0001C16 14.1993 14.1998 16 12 16H4C1.8002 16 0 14.1993 0 12.0001V3.9999C0 1.80015 1.8002 0 4 0ZM12.0001 14.6667C13.4709 14.6667 14.6667 13.4701 14.6667 12.0002V3.99996C14.6667 2.5296 13.4709 1.33342 12.0001 1.33342H4.0001C2.5299 1.33342 1.3335 2.5296 1.3335 3.99996V12.0002C1.3335 13.4701 2.5299 14.6667 4.0001 14.6667H12.0001ZM13.3379 3.66645C13.3379 4.21872 12.8902 4.66643 12.3379 4.66643C11.7856 4.66643 11.3379 4.21872 11.3379 3.66645C11.3379 3.11418 11.7856 2.66648 12.3379 2.66648C12.8902 2.66648 13.3379 3.11418 13.3379 3.66645ZM8.00391 3.9999C5.7943 3.9999 4.00391 5.79044 4.00391 7.9998C4.00391 10.2083 5.7943 12.0001 8.00391 12.0001C10.2129 12.0001 12.0039 10.2083 12.0039 7.9998C12.0039 5.79044 10.2129 3.9999 8.00391 3.9999ZM8.004 10.6668C6.53139 10.6668 5.3374 9.47285 5.3374 7.99988C5.3374 6.52691 6.53139 5.33334 8.004 5.33334C9.47662 5.33334 10.6706 6.52691 10.6706 7.99988C10.6706 9.47285 9.47662 10.6668 8.004 10.6668Z"></path></svg>
+        </a>
+        <a href="https://www.youtube.com/c/RollClubFood" aria-label="Youtube" class="yb-icon" target="_blank">
+            <svg width="20" height="14" viewBox="0 0 20 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.8252 0.428126C18.6819 0.658786 19.3575 1.33405 19.5879 2.19067C20.0164 3.75525 19.9999 7.01648 19.9999 7.01648C19.9999 7.01648 19.9999 10.2611 19.5882 11.8258C19.3575 12.6823 18.682 13.3576 17.8252 13.5881C16.2602 14 10 14 10 14C10 14 3.75611 14 2.17469 13.5718C1.31787 13.3411 0.642579 12.6658 0.411866 11.8093C0 10.2611 0 7 0 7C0 7 0 3.75525 0.411866 2.19067C0.642335 1.33417 1.33435 0.64231 2.17456 0.411894C3.73963 0 9.99977 0 9.99977 0C9.99977 0 16.2602 0 17.8252 0.428126ZM13.2126 6.99993L8.00679 4.00232V9.99754L13.2126 6.99993Z"></path></svg>
+        </a>
+    </div>
+      </div>
+    </div>
+    <div class="col-md-4 menu-column">
+      <div class="footer-item footer-item__menu">
+        <div class="h3 title">Меню</div>
+        <div class="footer-prod-menu-container">
+          <ul id="menu-footer-menu-1" class="menu"><li class="menu-icon-sushi menu-icon menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-34"><a href="https://roll-club.kh.ua/tovar-category/sushi/">Суши</a></li>
+            <li class="menu-icon-rolly menu-icon menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-31"><a href="https://roll-club.kh.ua/tovar-category/rolly/">Роллы</a></li>
+            <li class="menu-icon-nabory menu-icon menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-28"><a href="https://roll-club.kh.ua/tovar-category/nabory/">Сеты</a></li>
+            <li class="menu-icon-premium menu-icon menu-item-new menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-609141"><a href="https://roll-club.kh.ua/tovar-category/premium/">От шефа<span class="menu-item-text"></span></a></li>
+            <li class="menu-item-sale menu-icon-aktsiya menu-icon menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-602864"><a href="https://roll-club.kh.ua/tovar-category/aktsiya/">Скидки<span class="menu-item-text"></span></a></li>
+            <li class="menu-icon-bowl menu-icon menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-602863"><a href="https://roll-club.kh.ua/tovar-category/boyli-poke/">Читмил</a></li>
+            <li class="menu-icon-pizza menu-icon menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-130301"><a href="https://roll-club.kh.ua/tovar-category/pizza/">Пицца</a></li>
+            <li class="menu-icon-shaurma menu-icon menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-269653"><a href="https://roll-club.kh.ua/tovar-category/shaurma/">Шаурма</a></li>
+            <li class="menu-icon-burger menu-icon menu-item-new menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-610917"><a href="https://roll-club.kh.ua/tovar-category/burger/">Бургеры<span class="menu-item-text"></span></a></li>
+            <li class="menu-icon-eda-v-korobjchkah menu-icon menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-600935"><a href="https://roll-club.kh.ua/tovar-category/eda-v-korobjchkah/">Лапша</a></li>
+            <li class="menu-icon-goryachie-blyuda menu-icon menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-600936"><a href="https://roll-club.kh.ua/tovar-category/goryachie-blyuda/">Супы</a></li>
+            <li class="menu-icon-salaty menu-icon-goryachie-blyuda menu-icon menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-600937"><a href="https://roll-club.kh.ua/tovar-category/salaty/">Cалаты</a></li>
+            <li class="menu-icon-deserty menu-icon menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-600823"><a href="https://roll-club.kh.ua/tovar-category/deserty/">Десерты</a></li>
+            <li class="menu-icon-napitki menu-icon menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-269648"><a href="https://roll-club.kh.ua/tovar-category/napitki/">Напитки</a></li>
+            <li class="menu-icon-sousy menu-icon menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-269649"><a href="https://roll-club.kh.ua/tovar-category/sousy/">Соусы</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="copyright">© 2023 Все права защищены - roll-club.kh.ua Харьков. Продвижение сайта - <a href="https://prweb.pro/" target="_blank">prweb.pro</a></div>
+    </div>
+  </div>
+  <div class="footer-cards">
+    <div><svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M25.1978 19.7261V19.7775H25.2457C25.2547 19.7776 25.2636 19.7754 25.2714 19.7709C25.2745 19.7687 25.2771 19.7658 25.2787 19.7623C25.2804 19.7589 25.2812 19.7551 25.2811 19.7513C25.2812 19.7475 25.2804 19.7438 25.2787 19.7404C25.277 19.7371 25.2745 19.7342 25.2714 19.7321C25.2637 19.7275 25.2547 19.7252 25.2457 19.7256H25.1978V19.7261ZM25.2462 19.6897C25.2668 19.6884 25.2871 19.6943 25.3038 19.7064C25.3105 19.7119 25.3158 19.7189 25.3193 19.7268C25.3228 19.7347 25.3244 19.7433 25.324 19.7519C25.3243 19.7593 25.323 19.7668 25.3202 19.7736C25.3174 19.7805 25.3132 19.7868 25.3078 19.7919C25.2949 19.8031 25.2788 19.8098 25.2618 19.811L25.326 19.8843H25.2766L25.2174 19.8115H25.1983V19.8843H25.1569V19.6898H25.2469L25.2462 19.6897ZM25.2334 19.9514C25.2551 19.9516 25.2766 19.9472 25.2965 19.9385C25.3157 19.9303 25.3331 19.9184 25.3479 19.9037C25.3627 19.889 25.3745 19.8715 25.3827 19.8523C25.3996 19.8115 25.3996 19.7658 25.3827 19.725C25.3744 19.7059 25.3626 19.6885 25.3479 19.6736C25.3331 19.6589 25.3157 19.6471 25.2965 19.6388C25.2765 19.6306 25.255 19.6265 25.2334 19.6267C25.2114 19.6265 25.1895 19.6306 25.1691 19.6388C25.1495 19.6469 25.1317 19.6587 25.1165 19.6736C25.0938 19.697 25.0784 19.7265 25.0723 19.7584C25.0662 19.7904 25.0697 19.8235 25.0822 19.8536C25.0901 19.8729 25.1017 19.8904 25.1165 19.905C25.1317 19.9199 25.1495 19.9317 25.1691 19.9398C25.1894 19.9485 25.2113 19.9529 25.2334 19.9527M25.2334 19.5799C25.2899 19.5799 25.3441 19.602 25.3844 19.6416C25.4038 19.6606 25.4193 19.6833 25.4299 19.7083C25.4409 19.734 25.4465 19.7617 25.4465 19.7896C25.4465 19.8176 25.4409 19.8452 25.4299 19.8709C25.419 19.8958 25.4036 19.9184 25.3844 19.9376C25.3647 19.9565 25.3417 19.9718 25.3167 19.9826C25.2903 19.9938 25.262 19.9995 25.2334 19.9993C25.2044 19.9995 25.1757 19.9938 25.1491 19.9826C25.1237 19.972 25.1005 19.9568 25.0808 19.9376C25.0616 19.9177 25.0464 19.8943 25.036 19.8687C25.025 19.843 25.0193 19.8154 25.0193 19.7874C25.0193 19.7595 25.025 19.7318 25.036 19.7062C25.0466 19.6811 25.062 19.6585 25.0815 19.6395C25.1009 19.62 25.1241 19.6047 25.1497 19.5945C25.1764 19.5832 25.2051 19.5776 25.234 19.5778M5.55418 18.829C5.55418 18.4582 5.79708 18.1536 6.19408 18.1536C6.57348 18.1536 6.82949 18.4451 6.82949 18.829C6.82949 19.2129 6.57348 19.5044 6.19408 19.5044C5.79708 19.5044 5.55418 19.1998 5.55418 18.829M7.26197 18.829V17.7738H6.80328V18.0309C6.65779 17.8409 6.43712 17.7218 6.13702 17.7218C5.54582 17.7218 5.08186 18.1855 5.08186 18.8295C5.08186 19.4735 5.54557 19.9372 6.13702 19.9372C6.43699 19.9372 6.65779 19.818 6.80328 19.6281V19.8843H7.26145V18.829H7.26197ZM22.7606 18.829C22.7606 18.4582 23.0035 18.1536 23.4007 18.1536C23.7804 18.1536 24.0361 18.4451 24.0361 18.829C24.0361 19.2129 23.7804 19.5044 23.4007 19.5044C23.0037 19.5044 22.7606 19.1998 22.7606 18.829ZM24.4689 18.829V16.9269H24.0098V18.0309C23.8644 17.8409 23.6437 17.7218 23.3436 17.7218C22.7524 17.7218 22.2884 18.1855 22.2884 18.8295C22.2884 19.4735 22.7521 19.9372 23.3436 19.9372C23.6437 19.9372 23.8644 19.818 24.0098 19.6281V19.8843H24.4689V18.829ZM12.955 18.1319C13.2506 18.1319 13.4404 18.3172 13.4888 18.6435H12.3943C12.4433 18.3389 12.6283 18.1319 12.9551 18.1319M12.9642 17.7206C12.346 17.7206 11.9135 18.1705 11.9135 18.8284C11.9135 19.4991 12.3634 19.9361 12.9949 19.9361C13.3126 19.9361 13.6036 19.8568 13.8596 19.6405L13.6348 19.3005C13.458 19.4419 13.2328 19.5212 13.0211 19.5212C12.7255 19.5212 12.4564 19.3843 12.3902 19.0046H13.9565C13.961 18.9475 13.9656 18.8899 13.9656 18.8282C13.961 18.1706 13.5544 17.7205 12.9639 17.7205M18.5019 18.8282C18.5019 18.4574 18.7448 18.1528 19.1418 18.1528C19.5212 18.1528 19.7773 18.4443 19.7773 18.8282C19.7773 19.2121 19.5212 19.5036 19.1418 19.5036C18.7448 19.5036 18.5018 19.199 18.5018 18.8282M20.2096 18.8282V17.7738H19.7512V18.0309C19.6052 17.8409 19.385 17.7218 19.0849 17.7218C18.4937 17.7218 18.0297 18.1855 18.0297 18.8295C18.0297 19.4735 18.4935 19.9372 19.0849 19.9372C19.385 19.9372 19.6052 19.818 19.7512 19.6281V19.8843H20.2097V18.829L20.2096 18.8282ZM15.9116 18.8282C15.9116 19.4681 16.357 19.936 17.0369 19.936C17.3546 19.936 17.5663 19.8653 17.7952 19.6844L17.5749 19.3137C17.4027 19.4374 17.2219 19.5036 17.0223 19.5036C16.6561 19.4991 16.3869 19.2344 16.3869 18.8282C16.3869 18.4221 16.6561 18.1575 17.0223 18.1528C17.2213 18.1528 17.4022 18.219 17.5749 18.3428L17.7952 17.972C17.5659 17.7912 17.3542 17.7205 17.0369 17.7205C16.357 17.7205 15.9116 18.1882 15.9116 18.8282M21.8249 17.7205C21.5602 17.7205 21.3879 17.8443 21.2687 18.0296V17.7738H20.8142V19.8831H21.2734V18.7007C21.2734 18.3517 21.4234 18.1577 21.7232 18.1577C21.8214 18.1563 21.9189 18.1744 22.0101 18.2108L22.1514 17.7785C22.0499 17.7385 21.9175 17.7209 21.8246 17.7209M9.52973 17.9416C9.30906 17.7961 9.00498 17.7209 8.66953 17.7209C8.13514 17.7209 7.79109 17.977 7.79109 18.3961C7.79109 18.7401 8.04723 18.9522 8.51891 19.0184L8.73559 19.0493C8.98711 19.0846 9.10586 19.1508 9.10586 19.27C9.10586 19.433 8.93879 19.5261 8.62507 19.5261C8.30736 19.5261 8.07808 19.4246 7.92347 19.3054L7.70794 19.6631C7.95945 19.8484 8.27716 19.9369 8.62121 19.9369C9.2304 19.9369 9.58345 19.65 9.58345 19.2484C9.58345 18.8776 9.30559 18.6836 8.84651 18.6175L8.63034 18.5861C8.43177 18.5604 8.27266 18.5204 8.27266 18.379C8.27266 18.2248 8.42264 18.132 8.67429 18.132C8.94354 18.132 9.20418 18.2336 9.33193 18.3129L9.5305 17.9421L9.52973 17.9416ZM15.4483 17.7213C15.1836 17.7213 15.0113 17.845 14.8927 18.0304V17.7738H14.4381V19.8831H14.8968V18.7007C14.8968 18.3517 15.0468 18.1577 15.3466 18.1577C15.4448 18.1563 15.5423 18.1744 15.6335 18.2108L15.7748 17.7785C15.6733 17.7385 15.5409 17.7209 15.448 17.7209M11.534 17.7738H10.784V17.1339H10.3203V17.7738H9.89242V18.1931H10.3203V19.1553C10.3203 19.6447 10.5102 19.9362 11.0528 19.9362C11.2519 19.9362 11.4812 19.8745 11.6267 19.7731L11.4942 19.3804C11.3573 19.4597 11.2073 19.4996 11.088 19.4996C10.8588 19.4996 10.784 19.3582 10.784 19.1466V18.1935H11.534V17.7738ZM4.67625 19.8836V18.5599C4.67625 18.0613 4.35854 17.7259 3.84638 17.7214C3.57713 17.7169 3.2994 17.8007 3.10494 18.0967C2.95946 17.8628 2.73018 17.7214 2.40784 17.7214C2.18255 17.7214 1.96239 17.7876 1.79004 18.0346V17.7738H1.33096V19.8831H1.79364V18.7136C1.79364 18.3474 1.9967 18.1528 2.3103 18.1528C2.61489 18.1528 2.76899 18.3514 2.76899 18.709V19.8829H3.23269V18.7133C3.23269 18.3472 3.44437 18.1526 3.74884 18.1526C4.06204 18.1526 4.21151 18.3512 4.21151 18.7087V19.8826L4.67625 19.8836Z" fill="#231F20"></path> <path d="M25.4593 12.8672V12.5587H25.379L25.2861 12.7704L25.1937 12.5587H25.1131V12.8672H25.1702V12.6348L25.257 12.8353H25.3162L25.403 12.6343V12.8672H25.4596H25.4593ZM24.9497 12.8672V12.6115H25.0526V12.5595H24.7899V12.6115H24.8927V12.8672H24.9492H24.9497Z" fill="#F79410"></path> <path d="M16.3295 14.19H9.37834V1.69775H16.3297L16.3295 14.19Z" fill="#FF5F00"></path> <path d="M9.81903 7.94414C9.81903 5.41009 11.0055 3.15274 12.8532 1.698C11.4546 0.595223 9.72481 -0.00329434 7.94378 -0.000662746C3.55644 -0.000662746 0 3.5563 0 7.94414C0 12.332 3.55644 15.889 7.94378 15.889C9.72486 15.8916 11.4547 15.2931 12.8533 14.1903C11.0058 12.7358 9.81903 10.4783 9.81903 7.94414Z" fill="#EB001B"></path> <path d="M25.7075 7.94414C25.7075 12.332 22.151 15.889 17.7637 15.889C15.9824 15.8916 14.2524 15.2931 12.8535 14.1903C14.7017 12.7356 15.8882 10.4783 15.8882 7.94414C15.8882 5.40996 14.7017 3.15274 12.8535 1.698C14.2524 0.595256 15.9824 -0.00324822 17.7636 -0.000663047C22.1509 -0.000663047 25.7074 3.5563 25.7074 7.94414" fill="#F79E1B"></path> </svg> </div>
+<div><svg width="62" height="21" viewBox="0 0 62 21" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M26.7397 20.4064H21.7093L24.8532 1.08499H29.8841L26.7397 20.4064ZM17.4774 1.08499L12.6817 14.3744L12.1142 11.5127L12.1147 11.5137L10.4221 2.82466C10.4221 2.82466 10.2174 1.08499 8.03588 1.08499H0.107618L0.0145874 1.41215C0.0145874 1.41215 2.43906 1.91658 5.27649 3.62059L9.64686 20.4069H14.8881L22.8913 1.08499H17.4774V1.08499ZM57.0438 20.4064H61.6628L57.6356 1.08448H53.5919C51.7245 1.08448 51.2697 2.52438 51.2697 2.52438L43.7673 20.4064H49.0111L50.0598 17.5364H56.4546L57.0438 20.4064ZM51.5085 13.5717L54.1516 6.34121L55.6385 13.5717H51.5085ZM44.1606 5.73135L44.8785 1.58219C44.8785 1.58219 42.6634 0.739746 40.3541 0.739746C37.8578 0.739746 31.9297 1.83079 31.9297 7.13611C31.9297 12.1277 38.8874 12.1897 38.8874 14.8116C38.8874 17.4335 32.6466 16.9637 30.587 15.3104L29.8391 19.6487C29.8391 19.6487 32.0853 20.7397 35.5171 20.7397C38.9499 20.7397 44.1286 18.9623 44.1286 14.1248C44.1286 9.10112 37.1084 8.63338 37.1084 6.44923C37.1089 4.26457 42.008 4.54521 44.1606 5.73135V5.73135Z" fill="#2566AF"></path> <path d="M12.1148 11.5132L10.4221 2.82414C10.4221 2.82414 10.2174 1.08447 8.03588 1.08447H0.107618L0.0145874 1.41163C0.0145874 1.41163 3.82522 2.20135 7.48028 5.16024C10.9751 7.98837 12.1148 11.5132 12.1148 11.5132Z" fill="#E6A540"></path> </svg> </div>
+<div><svg width="97" height="21" viewBox="0 0 97 21" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M81.5758 15.6434L81.3539 15.4535C80.8134 14.992 80.7184 14.1505 81.211 13.61L86.9927 7.00188C87.4542 6.46137 88.2957 6.36638 88.8362 6.85898L89.0581 7.0498C89.5987 7.51046 89.6937 8.35276 89.201 8.89244L83.4193 15.5005C82.9578 16.0411 82.1483 16.1041 81.5758 15.6434V15.6434Z" fill="url(#paint0_linear_1527_82913)"></path> <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M86.2152 8.14596L86.1034 8.01819L85.214 9.03534L85.309 9.1463C86.8347 10.6712 86.1832 12.212 85.8335 12.7526L85.9605 12.6096C86.1673 12.3709 86.485 12.0061 86.8179 11.6093C87.1676 11.0049 87.6602 9.57501 86.2152 8.14596V8.14596Z" fill="url(#paint1_linear_1527_82913)"></path> <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M88.1208 10.1315L88.3595 9.86164C88.3755 9.8297 88.4066 9.79775 88.4226 9.76581C88.1687 10.0516 87.8989 10.3542 87.6442 10.6552C87.835 10.4492 87.9939 10.2744 88.1208 10.1315Z" fill="url(#paint2_radial_1527_82913)"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M89.2338 7.20783L83.4503 0.600571C82.9896 0.0592121 82.1473 -0.0366184 81.6077 0.457665L81.3857 0.646805C80.8452 1.10746 80.7502 1.94976 81.2428 2.48944L86.1193 8.01735L86.2302 8.14512C87.6761 9.59099 87.1835 11.02 86.8187 11.6236C87.1045 11.2899 87.3903 10.9562 87.6601 10.6544C87.9148 10.3526 88.1847 10.0508 88.4385 9.765C88.6932 9.47919 88.9311 9.20935 89.09 9.03366C89.6457 8.49398 89.7255 7.74751 89.2329 7.20783H89.2338Z" fill="url(#paint3_linear_1527_82913)"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M88.9152 15.6434L88.6932 15.4535C88.1527 14.992 88.0577 14.1505 88.5503 13.61L94.3321 7.00188C94.7928 6.46137 95.6351 6.36638 96.1747 6.85898L96.3975 7.0498C96.9372 7.51046 97.033 8.35276 96.5404 8.89244L90.7578 15.5005C90.2971 16.0411 89.4876 16.1041 88.9152 15.6434V15.6434Z" fill="url(#paint4_linear_1527_82913)"></path> <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M93.6176 8.08207L93.5067 7.95514L92.6165 8.97229L92.7123 9.08325C94.2372 10.6081 93.5865 12.149 93.236 12.6895L93.3638 12.5466C93.5697 12.3079 93.8875 11.9422 94.2212 11.5454C94.5709 10.9419 95.0635 9.51112 93.6176 8.08207V8.08207Z" fill="url(#paint5_linear_1527_82913)"></path> <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M95.4443 10.1315L95.683 9.86164C95.6981 9.8297 95.7301 9.79775 95.7461 9.76581C95.4922 10.0516 95.2224 10.3542 94.9677 10.6552C95.1585 10.4492 95.3333 10.2744 95.4443 10.1315Z" fill="url(#paint6_radial_1527_82913)"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M96.5565 7.20783L90.7739 0.600571C90.3132 0.0592121 89.4718 -0.0366184 88.9313 0.457665L88.7093 0.646805C88.1688 1.1083 88.0738 1.9506 88.5664 2.49028L93.4429 8.01819L93.5538 8.14596C94.9997 9.59183 94.5071 11.0209 94.1423 11.6244C94.4281 11.2907 94.7139 10.957 94.9837 10.6552C95.2376 10.3534 95.5083 10.0516 95.7621 9.76584C96.016 9.48003 96.2547 9.21019 96.4136 9.0345C96.9693 8.49482 97.0491 7.74835 96.5565 7.20867V7.20783Z" fill="url(#paint7_linear_1527_82913)"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M25.6747 0.0759888C27.1836 0.0759888 28.5176 0.408874 29.6298 1.04438C30.7579 1.71183 31.6153 2.64912 32.2189 3.84028C32.8233 5.04825 33.1251 6.4773 33.1251 8.11398C33.1251 9.87676 32.7754 11.4176 32.06 12.6727C31.3614 13.9437 30.3451 14.865 29.0262 15.4534C29.7096 15.6753 30.2653 16.1839 30.7259 16.9304L31.5203 18.1216C31.6792 18.3922 31.7742 18.6461 31.7742 18.9159C31.7742 19.2497 31.6481 19.5355 31.3774 19.7423C31.1076 19.9491 30.789 20.076 30.4401 20.076C30.1703 20.076 29.9156 20.0121 29.6777 19.8852C29.4549 19.7582 29.249 19.5674 29.0893 19.3295L27.7871 17.1691C27.5803 16.8194 27.3105 16.5647 26.9768 16.4058C26.6431 16.247 26.2143 16.152 25.6738 16.152C24.1338 16.152 22.8149 15.8183 21.6868 15.1827C20.5595 14.5161 19.7012 13.5788 19.0977 12.3868C18.4941 11.1637 18.1923 9.73386 18.1923 8.11398C18.1923 6.4773 18.5101 5.06338 19.0977 3.84028C19.7012 2.63315 20.5746 1.71183 21.6868 1.04438C22.8149 0.377771 24.133 0.0759888 25.6755 0.0759888H25.6747ZM63.7211 0.0911199C64.1019 0.0911199 64.4036 0.250837 64.6735 0.583723L69.233 6.23941L73.7757 0.583723C74.0447 0.265969 74.3793 0.107092 74.7601 0.107092C75.0938 0.107092 75.3956 0.234866 75.6654 0.504704C75.9361 0.774543 76.063 1.06035 76.063 1.44199C76.063 1.7278 75.9521 2.02959 75.7293 2.29943L70.6621 8.47881V14.659C70.6621 15.1197 70.5351 15.4686 70.2644 15.7392C69.9946 16.0082 69.6609 16.12 69.2473 16.12C68.8186 16.12 68.4538 15.9931 68.1839 15.7392C67.9132 15.4845 67.7863 15.1357 67.7863 14.659V8.47881L62.751 2.28345C62.5282 2.01446 62.4173 1.7278 62.4173 1.42602C62.4173 1.07633 62.5442 0.758571 62.814 0.488733C63.0847 0.218894 63.4025 0.0911199 63.7194 0.0911199H63.7211ZM43.1007 0.218894C44.7844 0.218894 46.0874 0.631638 47.0247 1.48907C47.962 2.3154 48.4386 3.50655 48.4386 5.0163C48.4386 6.52522 47.962 7.71637 47.0247 8.55867C46.0874 9.4161 44.7844 9.82969 43.1007 9.82969H39.1136V14.6271C39.1136 15.0878 38.9867 15.4375 38.7169 15.6913C38.4462 15.9612 38.0973 16.0881 37.6518 16.0881C37.2231 16.073 36.8583 15.9452 36.6195 15.6762C36.3497 15.4055 36.2227 15.0558 36.2227 14.6111V1.56893C36.2227 1.14021 36.3488 0.806486 36.6035 0.568591C36.8583 0.345827 37.192 0.218894 37.6207 0.218894H43.1015H43.1007ZM13.7917 0.0911199C14.2204 0.0911199 14.602 0.218894 14.8559 0.488733C15.1266 0.758571 15.2535 1.0923 15.2535 1.52101V14.6111C15.2535 15.0398 15.1266 15.4055 14.8559 15.6753C14.5861 15.9452 14.2364 16.073 13.7917 16.073C13.3789 16.073 13.0292 15.9452 12.7594 15.6753C12.4896 15.4055 12.3618 15.0558 12.3618 14.6111V1.52101C12.3618 1.0923 12.4896 0.758571 12.7594 0.488733C13.0292 0.218894 13.363 0.0911199 13.7917 0.0911199V0.0911199ZM55.8571 0.0759888C56.1748 0.0759888 56.4606 0.155007 56.7313 0.297912C57.0003 0.45763 57.2071 0.679553 57.35 0.981335L63.5302 14.2135C63.5933 14.4203 63.6412 14.5952 63.6412 14.8019C63.6412 15.1357 63.4983 15.4215 63.2285 15.6762C62.9578 15.8981 62.64 16.025 62.2752 16.025C62.0524 16.025 61.8145 15.9612 61.6078 15.8342C61.401 15.7073 61.2261 15.5005 61.1151 15.2458L59.7651 12.2599H51.949L50.599 15.2466C50.4721 15.5165 50.3132 15.7073 50.1064 15.8342C49.8996 15.9612 49.6777 16.025 49.4238 16.025C49.0901 16.025 48.7564 15.8981 48.4865 15.6753C48.2007 15.4534 48.0729 15.1508 48.0729 14.8011C48.0729 14.6111 48.1209 14.4043 48.1999 14.2135L54.3641 0.981335C54.4902 0.695525 54.6979 0.456789 54.9837 0.297912C55.2535 0.139035 55.5393 0.0759888 55.8579 0.0759888H55.8571ZM1.44887 0.107092C1.87759 0.107092 2.25839 0.234866 2.5131 0.504704C2.78294 0.774543 2.90987 1.10827 2.90987 1.53698V13.594H9.15314C10.0425 13.594 10.5032 13.9916 10.5032 14.77C10.5032 15.5484 10.0425 15.9452 9.15314 15.9452H1.36902C0.9403 15.9452 0.606574 15.8191 0.368679 15.5804C0.145915 15.3576 0.0189819 15.0239 0.0189819 14.6111V1.53698C0.0189819 1.10827 0.145915 0.774543 0.415754 0.504704C0.686433 0.234866 1.02016 0.107092 1.44887 0.107092ZM25.6419 2.33221C24.1809 2.33221 23.0528 2.82481 22.2433 3.81002C21.4329 4.81035 21.0202 6.2083 21.0202 8.08288C21.0202 9.95746 21.4321 11.3554 22.2433 12.3557C23.0528 13.3569 24.1969 13.8495 25.6427 13.8495C27.0886 13.8495 28.2159 13.3569 29.0262 12.3557C29.8366 11.3554 30.2493 9.92636 30.2493 8.08288C30.2493 6.2083 29.8366 4.81035 29.0262 3.81002C28.2159 2.80884 27.1037 2.33221 25.6427 2.33221H25.6419ZM55.8571 3.42838L52.9183 10.0365H58.8119L55.8571 3.42838V3.42838ZM42.735 2.4583H39.1136V7.62138L42.7359 7.63735C44.7054 7.63735 45.7066 6.76311 45.7066 5.04825C45.7066 3.33255 44.7054 2.45914 42.7359 2.45914L42.735 2.4583Z" fill="black"></path> <defs> <linearGradient id="paint0_linear_1527_82913" x1="81.9504" y1="13.4827" x2="88.7715" y2="9.54985" gradientUnits="userSpaceOnUse"> <stop stop-color="#1FADC3"></stop> <stop offset="0.7072" stop-color="#36B98F"></stop> </linearGradient> <linearGradient id="paint1_linear_1527_82913" x1="86.1602" y1="9.82113" x2="86.8618" y2="9.23518" gradientUnits="userSpaceOnUse"> <stop stop-color="#123F06" stop-opacity="0"></stop> <stop offset="1" stop-color="#123F06"></stop> </linearGradient> <radialGradient id="paint2_radial_1527_82913" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(84.9343 9.72906) scale(3.8733 3.87226)"> <stop offset="0.4185" stop-color="#123F06" stop-opacity="0"></stop> <stop offset="1" stop-color="#123F06"></stop> </radialGradient> <linearGradient id="paint3_linear_1527_82913" x1="82.2562" y1="2.91077" x2="88.4039" y2="6.66929" gradientUnits="userSpaceOnUse"> <stop stop-color="#9FDB57"></stop> <stop offset="1" stop-color="#71CA5E"></stop> </linearGradient> <linearGradient id="paint4_linear_1527_82913" x1="89.2838" y1="13.4868" x2="96.1048" y2="9.55409" gradientUnits="userSpaceOnUse"> <stop stop-color="#1FADC3"></stop> <stop offset="0.7072" stop-color="#36B98F"></stop> </linearGradient> <linearGradient id="paint5_linear_1527_82913" x1="93.563" y1="9.75808" x2="94.2647" y2="9.17187" gradientUnits="userSpaceOnUse"> <stop stop-color="#123F06" stop-opacity="0"></stop> <stop offset="1" stop-color="#123F06"></stop> </linearGradient> <radialGradient id="paint6_radial_1527_82913" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(92.2643 9.72906) scale(3.8733 3.87226)"> <stop offset="0.4185" stop-color="#123F06" stop-opacity="0"></stop> <stop offset="1" stop-color="#123F06"></stop> </radialGradient> <linearGradient id="paint7_linear_1527_82913" x1="89.5825" y1="2.91385" x2="95.7305" y2="6.67224" gradientUnits="userSpaceOnUse"> <stop stop-color="#9FDB57"></stop> <stop offset="1" stop-color="#71CA5E"></stop> </linearGradient> </defs> </svg> </div>
+</div>
+ </div>
+ <button class="back-top" type="button" style="display: block;"><svg height="20px" width="20px" fill="#231F20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" x="0px" y="0px"><path d="M21.83,64.83,48,38.66,74.17,64.83a4,4,0,0,0,5.66-5.66l-29-29a4,4,0,0,0-5.66,0l-29,29a4,4,0,0,0,5.66,5.66Z"></path></svg><span>Вверх</span></button>
+</footer>
+
+
+   
+   <script src="js/bootstrap.bundle.min.js">
+   </script>
+   <script>
+   //dropdown
+   document.addEventListener("DOMContentLoaded", function () {
+      const hoverDropdown = document.getElementById("hover-dropdown");
+    
+      hoverDropdown.addEventListener("mouseover", function () {
+        hoverDropdown.classList.add("show");
+        const dropdownMenu = hoverDropdown.querySelector(".dropdown-menu");
+        dropdownMenu.classList.add("show");
+      });
+    
+      hoverDropdown.addEventListener("mouseout", function () {
+        hoverDropdown.classList.remove("show");
+        const dropdownMenu = hoverDropdown.querySelector(".dropdown-menu");
+        dropdownMenu.classList.remove("show");
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+  const hoverDropdown2 = document.getElementById("hover-dropdown2");
+
+  hoverDropdown2.addEventListener("mouseover", function () {
+    hoverDropdown2.classList.add("show");
+    const dropdownMenu = hoverDropdown2.querySelector(".dropdown-menu");
+    dropdownMenu.classList.add("show");
+  });
+
+  hoverDropdown2.addEventListener("mouseout", function () {
+    hoverDropdown2.classList.remove("show");
+    const dropdownMenu = hoverDropdown2.querySelector(".dropdown-menu");
+    dropdownMenu.classList.remove("show");
+  });
+});
+//sticky button
+window.addEventListener('scroll', function() {
+  const button = document.getElementById('sticky-button');
+  const orderBlock = document.querySelector('.order-block');
+  const buttonTop = orderBlock.offsetTop;
+  const scrollY = window.scrollY;
+
+  if (scrollY >= buttonTop) {
+    button.style.position = 'fixed';
+    button.style.top = '0';
+  } else {
+    button.style.position = 'relative';
+    button.style.top = 'auto';
+  }
+});
+//buttonup 
+
+const backToTopButton = document.querySelector('.back-top');
+
+
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 300) {
+    backToTopButton.style.display = 'block';
+  } else {
+    backToTopButton.style.display = 'none';
+  }
+});
+
+
+backToTopButton.addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+    </script>
+    
+    
+    
+    
+    
+    
+    
+  </body>
+</html>
